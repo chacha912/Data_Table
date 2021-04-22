@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>인터넷우체국 - 우체국택배 요금안내</title>
+    <link rel="stylesheet" href="./table.css" />
+  </head>
+  <body>
+    <h1>요금안내</h1>
+    <h2>우체국택배(방문접수)</h2>
+    <p>고객이 원하는 장소로 우체국직원이 방문하여 접수하는 서비스</p>
+    <figure>
+      <figcaption>
+        <strong id="delivery-charge-caption">우체국택배 방문접수 요금</strong>
+        <span id="delivery-charge-summary"
+          >택배 무게(부피)와 배송일에 따른 요금 안내</span
+        >
+      </figcaption>
+      <table
+        class="pay-table"
+        aria-labelledby="delivery-charge-caption"
+        aria-describedby="delivery-charge-summary"
+      >
+        <thead>
+          <tr>
+            <th colspan="2" scope="col" class="pay-tbl-th">
+              구 분<br />(초과 ~ 이하)
+            </th>
+            <th scope="col" class="pay-tbl-th">5kg 이하<br />(80㎝ 이하)</th>
+            <th scope="col" class="pay-tbl-th">5kg∼10kg<br />(80㎝∼100㎝)</th>
+            <th scope="col" class="pay-tbl-th">10kg∼20kg<br />(100㎝∼120㎝)</th>
+            <th scope="col" class="pay-tbl-th">20kg∼30kg<br />(120㎝∼160㎝)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" colspan="2">익일배달</th>
+            <td>5,000</td>
+            <td>8,000</td>
+            <td>10,000</td>
+            <td>12,000</td>
+          </tr>
+          <tr>
+            <th scope="rowgroup" rowspan="2">제주</th>
+            <th scope="row">익일배달</th>
+            <td>7,500</td>
+            <td>10,500</td>
+            <td>12,500</td>
+            <td>14,500</td>
+          </tr>
+          <tr>
+            <th scope="row">D+2일 배달</th>
+            <td>5,000</td>
+            <td>8,000</td>
+            <td>10,000</td>
+            <td>12,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </figure>
+  </body>
+</html>

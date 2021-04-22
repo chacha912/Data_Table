@@ -26,8 +26,7 @@
 
 위 표만 보면 어느정도 그럴듯하게 보일지 모르지만(디자인 상으로는), 사실 코드를 보면 전혀 그렇지 못하다.
 
-<details>
-<summary style="text-decoration:underline">접근성이라고는 찾아볼 수 없는 html 코드 보기</summary>
+접근성이라고는 찾아볼 수 없는 html 코드
 
 ```html
 <html>
@@ -53,9 +52,6 @@
 </html>
 ```
 
-</details>
-<br>
-
 위 드롭다운 내부의 코드를 보게되면, `table`, `tr`, `td` 만으로 테이블을 표현하고 있다. 사실 이렇게만 표현해도 자료를 충분히 표현할 수 있고, `css`를 이용해서 충분히 예쁘게 꾸밀 수도 있을 것이다. 하지만 전혀 _sementic_ 한 느낌을 주지도 않고 접근성을 아예 고려하지 않은 코드이다.
 
 그럼 어떻게 수정할 수 있을까?
@@ -69,8 +65,7 @@
   - `thead`, `tbody`, `tfoot` 3형제
   - `th`, `tr`, `td`
   - `caption`
-  - `colgroup`, `rowgroup`
-  - `col`, `row`
+  - `colgroup`, `rowgroup`, `col`, `row`
 
 - attributes
   - `scope`, `id`, `headers`
@@ -98,25 +93,138 @@
 
 ```html
 <table>
+  <!-- caption 태그를 통해서 표에 대한 간랸한 설명 -->
   <caption>
     정두영 개인정보
   </caption>
-  <tr>
-    <th scope="col">이름</th>
-    <th scope="col">성별</th>
-    <th scope="col">나이</th>
-  </tr>
-  <tr>
-    <th scope="row">정두영</th>
-    <td>남자</td>
-    <td>25</td>
-  </tr>
+
+  <!-- thead로 테이블의 행을 명시적으로 구분해줌 -->
+  <!-- scope속성으로 셀들이 영향을 받는 제목 역할을 알 수 있게 해줌 -->
+  <thead>
+    <tr>
+      <th scope="col">이름</th>
+      <th scope="col">성별</th>
+      <th scope="col">나이</th>
+    </tr>
+  </thead>
+
+  <!-- tbody로 테이블의 행을 명시적으로 구분해줌 -->
+  <!-- scope속성으로 셀들이 영향을 받는 제목 역할을 알 수 있게 해줌 -->
+  <tbody>
+    <tr>
+      <th scope="row">정두영</th>
+      <td>남자</td>
+      <td>25</td>
+    </tr>
+  </tbody>
 </table>
 ```
 
 그리고 만약 셀들이 병합되는 등 좀 더 복잡한 테이블의 경우에는 `colgroup`과 `rowgroup`속성을 통해 `col`, `row` 등을 그룹지어주는 과정도 필요하다.
 
-## 3. 결론
+## 3. 실습
+
+<img style="margin:10px auto;display:block" src="./img/table_1.png" alt="table" width="750">
+
+위 그림은 간단한 표 예제이다. 사실 만약 내가 접근성이 뭔지도 몰랐을 때 위 표를 마크업한다고 하면, 아마도 다믕과 같은 형식으로 짰을 것이 분명하다.
+
+```html
+<!-- 표준? 접근성? 그게 뭐죠? -->
+
+<table>
+  <!-- caption 태그의 부재 : 보조기기 사용자들이 해당 표가 무슨 내용인지 전혀 알 수 없는 상태 -->
+
+  <!-- 각각의 셀들이 무슨 연관성을 가지고 배치되어 있는지 전혀 알지 못함-->
+  <tr>
+    <td colspan="2">구 분 (초과 ~ 이하)</td>
+    <td>5kg 이하 (80㎝ 이하)</td>
+    <td>5kg∼10kg (80㎝∼100㎝)</td>
+    <td>10kg∼20kg (100㎝∼120㎝)</td>
+    <td>20kg~30kg (120㎝∼160㎝)</td>
+  </tr>
+  <tr>
+    <td colspan="2">익일 배달</td>
+    <td>5,000</td>
+    <td>8,000</td>
+    <td>10,000</td>
+    <td>12,000</td>
+  </tr>
+  <tr>
+    <td rowspan="2">제주</td>
+    <td>익일배달</td>
+    <td>5,000</td>
+    <td>8,000</td>
+    <td>10,000</td>
+    <td>12,000</td>
+  </tr>
+  <tr>
+    <th>D+2일 배달</th>
+    <td>5,000</td>
+    <td>8,000</td>
+    <td>10,000</td>
+    <td>12,000</td>
+  </tr>
+</table>
+```
+
+일단 위 코드를 보면
+
+- `caption` 태그가 있는가? <span style="color:red; font-weight:700">NO</span>
+- `thead`, `tbody`, `tfoot`이 있는가? <span style="color:red; font-weight:700">NO</span>
+- `scope`속성을 주었는가? <span style="color:red; font-weight:700">NO</span>
+
+접근성에 대해 단 '1'도 고려하지 않은 코드라고 볼 수 있겠다. 하지만 과거의 나라면 단순히 표가 잘 그려지는 것을 보고 만족했을 것이다.
+하지만, 접근성을 조금 더 고려해본다면 다음과 같이 개선할 수 있을 것이다.
+
+```html
+<table>
+  <!-- caption 태그로 확실하게 표의 내용을 정리하고 알려줌 -->
+  <caption class="a11y-hidden">
+    우체국 택배(방문접수)
+  </caption>
+
+  <!-- 테이블의 행들을 깔끔하게 분리해서 명시해줌 -->
+  <thead>
+    <tr>
+      <th colspan="2" scope="row">구 분 (초과 ~ 이하)</th>
+      <th scope="col">5kg 이하 (80㎝ 이하)</th>
+      <th scope="col">5kg∼10kg (80㎝∼100㎝)</th>
+      <th scope="col">10kg∼20kg (100㎝∼120㎝)</th>
+      <th scope="col">20kg~30kg (120㎝∼160㎝)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th colspan="2" scope="row">익일 배달</th>
+      <td>5,000</td>
+      <td>8,000</td>
+      <td>10,000</td>
+      <td>12,000</td>
+    </tr>
+    <tr>
+      <th rowspan="2" scope="rowgroup">제주</th>
+      <th scope="row">익일배달</th>
+      <td>5,000</td>
+      <td>8,000</td>
+      <td>10,000</td>
+      <td>12,000</td>
+    </tr>
+    <tr>
+      <th scope="row">D+2일 배달</th>
+      <td>5,000</td>
+      <td>8,000</td>
+      <td>10,000</td>
+      <td>12,000</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+- `caption` 태그가 있는가? <span style="color:BLUE; font-weight:700">YES</span>
+- `thead`, `tbody`, `tfoot`이 있는가? <span style="color:BLUE; font-weight:700">YES</span>
+- `scope`속성을 주었는가? <span style="color:BLUE; font-weight:700">YES</span>
+
+이렇게 수정함으로써 디자인적으로는 변함없이, 스크린 리더가 표를 효과적으로 읽어주어 시각적으로 불편한 사람들이 보조기기의 도움을 받아 표를 조금 더 잘 이해할 수 있도록 해줄 수 있게 되었다.
 
 위와 같은 과정들은 시각적인 디자인에는 영향을 주지 않기 때문에 일반적인 사용자들은 눈치채지 못할뿐아니라 필요성조차 느낄 수 없겠지만, 스크린 리더 등의 보조 장치에 의존하여 웹 서비스를 사용하는 일부 사용자들에게는 이전과 비교할 수 없을 정도의 큰 차이를 선사해줄 수 있을 것이다.
 

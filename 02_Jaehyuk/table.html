@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인터넷우체국 테이블</title>
+</head>
+<body>
+    <h1>인터넷우체국 요금안내</h1>
+    <section class="">
+        <table aria-describedby="우체국택배(방문접수) 고객님이 원하는 장소로 우체국직원이 방문하여 접수하는 우편 서비스">
+            <caption>우체국택배(방문접수)</caption>
+            <thead>
+                <th colspan="2" aria-colspan="2">
+                    구분
+                    <br>
+                    (초과~이하)
+                </th>
+                <th id="less-than-5">
+                    5kg 이하
+                    <br>
+                    (80㎝ 이하)
+                </th>
+                <th id="between-5-and-10">
+                    5kg∼10kg
+                    <br>
+                    (80㎝∼100㎝)
+                </th>
+                <th id="between-10-and-20">
+                    10kg∼20kg
+                    <br>
+                    (100㎝∼120㎝)
+                </th>
+                <th id="between-20-and-30">
+                    20kg∼30kg
+                    <br>
+                    (120㎝∼160㎝)
+                </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row" colspan="2" aria-colspan="2" id="today-delivery">
+                        익일배달
+                    </th>
+                    <td headers="less-than-5 today-delivery">
+                        5,000
+                    </td>
+                    <td headers="between-5-and-10 today-delivery">
+                        8,000
+                    </td>
+                    <td headers="between-10-and-20 today-delivery">
+                        10,000
+                    </td>
+                    <td headers="between-20-and-30 today-delivery">
+                        12,000
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" rowspan="2" aria-rowspan="2" id="jeju">
+                        제주
+                    </th>
+                    <th scope="row" id="today-delivery-jeju">
+                        익일배달
+                    </th>
+                    <td headers="less-than-5 jeju today-delivery-jeju">
+                        7,500
+                    </td>
+                    <td headers="between-5-and-10 jeju today-delivery-jeju">
+                        10,500
+                    </td>
+                    <td headers="between-10-and-20 jeju today-delivery-jeju">
+                        12,500
+                    </td>
+                    <td headers="between-20-and-30 jeju today-delivery-jeju">
+                        14,500
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" id="after-2-days-delivery-jeju">
+                        D+2일 배달
+                    </th>
+                    <td headers="less-than-5 jeju after-2-days-delivery-jeju">
+                        5,000
+                    </td>
+                    <td headers="between-5-and-10 jeju after-2-days-delivery-jeju">
+                        8,000
+                    </td>
+                    <td headers="between-10-and-20 jeju after-2-days-delivery-jeju">
+                        10,000
+                    </td>
+                    <td headers="between-20-and-30 jeju after-2-days-delivery-jeju">
+                        12,000
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="">
+        <table aria-describedby="소포우편(창구접수) 고객님이 우체국에 방문하여 등기로 접수하는 우편 서비스">
+
+        </table>
+    </section>
+</body>
+</html>

@@ -51,3 +51,7 @@ body {
 .pay-table .width-10 {
   width: 10%;
 }
+
+.pay-table caption + thead th {
+  border-bottom: none;
+}

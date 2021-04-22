@@ -252,5 +252,42 @@
         </tr>
       </tbody>
     </table>
+    <h2>소포요금 감액</h2>
+    <p>2. 요금감액 범위</p>
+    <table class="pay-table">
+      <caption>
+        납부방법에 따른 요금감액
+      </caption>
+      <thead>
+        <tr>
+          <th id="condition" class="pay-tbl-th" colspan="2">납부방법/할인율</th>
+          <th id="percent5" class="pay-tbl-th" headers="condition">5%</th>
+          <th id="percent10" class="pay-tbl-th" headers="condition">10%</th>
+          <th id="percent15" class="pay-tbl-th" headers="condition">15%</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th id="counter" rowspan="2" headers="condition">창구소포</th>
+          <th id="prepaid" headers="condition counter">요금즉납</th>
+          <td headers="condition counter prepaid percent5">3개 이상</td>
+          <td headers="condition counter prepaid percent10">10개 이상</td>
+          <td headers="condition counter prepaid percent15">50개 이상</td>
+        </tr>
+        <tr>
+          <th id="collect" headers="condition counter">요금후납</th>
+          <td headers="condition counter collect percent5">70개 이상</td>
+          <td headers="condition counter collect percent10">100개 이상</td>
+          <td headers="condition counter collect percent15">130개 이상</td>
+        </tr>
+        <tr>
+          <th id="pickUp" headers="condition">방문접수</th>
+          <th id="info" headers="condition pickUp">접수정보<br />사전연계</th>
+          <td colspan="3" headers="condition pickUp info">
+            개당 500원 감액<br />(접수정보 입력, 사전결제, 픽업장소 지정 시)
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>

@@ -1,0 +1,25 @@
+body {
+  font-size: 14px;
+  color: #454545;
+}
+.table-common {
+  margin-bottom: 30px;
+  border-top: 2px solid grey;
+}
+.table-common td {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 5px;
+}
+.table-common th {
+  padding: 10px;
+}
+.table-common > thead th {
+  background-color: #eee;
+  color: #656565;
+  font-weight: 600;
+}
+.table-common th,
+td {
+  border: 1px solid #ccc;
+}

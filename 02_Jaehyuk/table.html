@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./table.css">
     <title>인터넷우체국 테이블</title>
 </head>
 <body>
@@ -341,6 +342,8 @@
                         안심소포
                     </th>
                 </tr>
+            </thead>
+            <tbody>
                 <tr>
                     <th scope="row">
                         수수료(1개당)
@@ -361,7 +364,82 @@
                         10만원마다 500원
                     </td>
                 </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="">
+        <h2>소포요금 감액</h2>
+        <table border="1" aria-describedby="소포요금 감액 1. 요금감액 요건. 감액 대상: 창구접수(등기소포)·방문접수 우편요금(부가취급수수료 제외) - 기표지 상 동일발송인 및 접수정보 연계 접수시에 한함. 접수연계란? : 고객이 우체국창구에서 직접 주소ㆍ성명 등을 기재하지 않고, 인터넷우체국 '창구(다량)소포접수'를 통하여 주소ㆍ성명 등을 사전에 입력하는 것을 말함. 감액접수 대상관서 : 전국 모든 우편관서(우편취급국 포함) 2. 요금감액 범위">
+            <thead>
+                <tr>
+                    <th colspan="2" aria-colspan="2" id="payment-ways-discount-rate">
+                        납부방법/할인율
+                    </th>
+                    <th id="5%-discount-rate">
+                        5%
+                    </th>
+                    <th id="10%-discount-rate">
+                        10%
+                    </th>
+                    <th id="15%-discount-rate">
+                        15%
+                    </th>
+                </tr>
             </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="2" aria-rowspan="2" id="visit-parcel">
+                        창구소포
+                    </th>
+                    <th id="immediate-payment">
+                        요금즉납
+                    </th>
+                    <td headers="payment-ways-discount-rate visit-parcel immediate-payment 5%-discount-rate">
+                        3개 이상
+                    </td>
+                    <td headers="payment-ways-discount-rate visit-parcel immediate-payment 10%-discount-rate">
+                        10개 이상
+                    </td>
+                    <td headers="payment-ways-discount-rate visit-parcel immediate-payment 15%-discount-rate">
+                        50개 이상
+                    </td>
+                </tr>
+                <tr>
+                    <th id="after-payment">
+                        요금후납
+                    </th>
+                    <td headers="payment-ways-discount-rate visit-parcel after-payment 5%-discount-rate">
+                        70개 이상
+                    </td>
+                    <td headers="payment-ways-discount-rate visit-parcel after-payment 10%-discount-rate">
+                        100개 이상
+                    </td>
+                    <td headers="payment-ways-discount-rate visit-parcel after-payment 15%-discount-rate">
+                        130개 이상
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        방문접수
+                    </th>
+                    <th scope="row">
+                        접수정보
+                        <br>
+                        사전연게
+                    </th>
+                    <td colspan="3" aria-colspan="3">
+                        개당 500원 감액
+                        <br>
+                        (접수정보 입력, 사전결제, 픽업장소 지정 시)
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td colspan="5" aria-colspan="5">
+                    창구접수 감액은 인터넷우체국 사전접수를 통한 접수정보 연계 시 적용
+                </td>
+            </tfoot>
         </table>
     </section>
 </body>

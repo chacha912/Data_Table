@@ -245,34 +245,38 @@ HTML에서 만드는 표로, 2차원으로 나뉜 공간에 행이나 열을 따
                     <col span="4">
                     <col>
                 </colgroup>
-                <tr>
-                    <th scope="rowgroup" colspan="2" rowspan="2">구 분<br>(초과 ~ 이하)</th>
-                    <th scope="col">80cm 이하</th>
-                    <th scope="colgroup" colspan="2">80cm ~ 100cm</th>
-                    <th scope="colgroup" colspan="4">100cm ~ 120cm</th>
-                    <th scope="col">120cm ~ 160cm</th>
-                </tr>
-                <tr>
-                    <th scope="col">3kg 이하</th>
-                    <th scope="col">3kg~5kg</th>
-                    <th scope="col">5kg~7kg</th>
-                    <th scope="col">7kg~10kg</th>
-                    <th scope="col">10kg~15kg</th>
-                    <th scope="col">15kg~20kg</th>
-                    <th scope="col">20kg~25kg</th>
-                    <th scope="col">25kg~30kg</th>
-                </tr>
-                <tr>
-                    <th scope="row" colspan="2">익일배달</th>
-                    <td >2,700</td>
-                    <td >3,200</td>
-                    <td >3,700</td>
-                    <td>4,700</td>
-                    <td>5,700</td>
-                    <td>6,700</td>
-                    <td>7,700</td>
-                    <td>9,700ㅍ</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th scope="rowgroup" colspan="2" rowspan="2">구 분<br>(초과 ~ 이하)</th>
+                        <th scope="col">80cm 이하</th>
+                        <th scope="colgroup" colspan="2">80cm ~ 100cm</th>
+                        <th scope="colgroup" colspan="4">100cm ~ 120cm</th>
+                        <th scope="col">120cm ~ 160cm</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">3kg 이하</th>
+                        <th scope="col">3kg~5kg</th>
+                        <th scope="col">5kg~7kg</th>
+                        <th scope="col">7kg~10kg</th>
+                        <th scope="col">10kg~15kg</th>
+                        <th scope="col">15kg~20kg</th>
+                        <th scope="col">20kg~25kg</th>
+                        <th scope="col">25kg~30kg</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" colspan="2">익일배달</th>
+                        <td >2,700</td>
+                        <td >3,200</td>
+                        <td >3,700</td>
+                        <td>4,700</td>
+                        <td>5,700</td>
+                        <td>6,700</td>
+                        <td>7,700</td>
+                        <td>9,700</td>
+                    </tr>
+                </tbody>
             </table>
         </li>
     </ol>
@@ -291,3 +295,97 @@ HTML에서 만드는 표로, 2차원으로 나뉜 공간에 행이나 열을 따
 
 ### 부가이용 수수료(등기소포를 전제로 취급지역에 한함)
 
+<details>
+<summary>부가이용 수수료 html 코드</summary>
+
+```html
+<h2>부가이용 수수료(등기소포를 전제로 취급지역에 한함)</h2>
+    <table>
+        <caption>부가이용 수수료 표</caption>
+        <thead>
+            <th scope="row">구분</th>
+            <th scope="col">당일특급</th>
+            <th scope="col">착불소포</th>
+            <th scope="col">안심소포</th>
+        </thead>
+        <tbody>
+            <td>수수료(1개당)</td>
+            <td>지역구분 요금<br>- 지역 내: 5,000원<br>- 지역 간: 10,000원</td>
+            <td>500원</td>
+            <td>1000원 + 손해배상한도액 초과시<br>10만원마다 500원</td>
+        </tbody>
+    </table>
+```
+</details>
+
+`scope`속성을 사용하여 구현하였다. 비교적 간단한 표이기 때문에 자세한 언급은 생략한다.
+
+### 소포요금 감액
+
+이 부분은 조금 애매한 부분이 있다. 일단 원래 그려진 표에서 관련된 요소들을 보자.
+
+![요금감액 범위 표](./images/table3.png)
+
+기존에 그려진 표와 달리 열과 행 전체에 `납부방법/할인율`이 관여하고 있다. 또한 `개당 500원 감액`이 적힌 셀은 논리적 흐름상 할인률에 적용하기 어려운 면이 있다. 
+
+어쨌든 표로 그려져 있기 때문에 이걸 그려야 한다면 `scope`보다는 관계를 좀 더 유연하게 표현할 수 있는 `id`와 `headers`가 적절하다고 판단하여 아래와 같이 마크업을 하였다.
+
+<details>
+<summary>요금감액범위 html 코드</summary>
+
+```html
+<h2>소포요금 감액</h2>
+    <ol>
+        <li>
+            요금감액 조건
+            <ol>
+                <li>감액 대상 : 창구접수(등기소포)·방문접수 우편요금(부가취급수수료 제외) - 기표지 상 동일발송인 및 접수정보 연계 접수시에 한함</li>
+                <li>접수연계란? : 고객이 우체국창구에서 직접 주소ㆍ성명 등을 기재하지 않고, 인터넷우체국 '창구(다량)소포접수'를 통하여 주소ㆍ성명 등을 사전에 입력하는 것을 말함 &#8594; 이용안내</li>
+                <li></li>
+            </ol>
+        </li>
+        <li>
+            요금감액 범위
+            <table>
+                <caption>납부방법에 따른 할인률</caption>
+                <colgroup>
+                    <col span="2">
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th id="pay-dc" colspan="2">납부방법/할인률</th>
+                        <th id="5per" headers="pay-dc">납부방법 할인률</th>
+                        <th id="10per" headers="pay-dc">납부방법 할인률</th>
+                        <th id="15per" headers="pay-dc">납부방법 할인률</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th id="counter" headers="pay-dc" rowspan="2">창구소포</th>
+                        <th id="now" headers="pay-dc counter">요금즉납</th>
+                        <td headers="pay-dc counter now 5per">3개 이상</td>
+                        <td headers="pay-dc counter now 10per">10개 이상</td>
+                        <td headers="pay-dc counter now 15per">50개 이상</td>
+                    </tr>
+                    <tr>
+                        <th id="after" headers="pay-dc counter">요금후납</th>
+                        <td headers="pay-dc counter after 5per">70개 이상</td>
+                        <td headers="pay-dc counter after 10per">100개 이상</td>
+                        <td headers="pay-dc counter after 15per">130개 이상</td>
+                    </tr>
+                    <tr>
+                        <th id="visit" headers="pay-dc">방문접수</th>
+                        <th id="pre" headers="pay-dc counter">요금즉납</th>
+                        <td headers="pay-dc visit pre" colspan="3">개당 500원 감액<br>(접수정보 입력, 사전결제, 픽업장소 지정 시)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </li>
+    </ol>
+```
+</details>
+
+위 코드에서 보면 1행과 1,2열에 모두 `납부방법/할인률`에 해당하는 id를 기입하였고, 마지막 셀에는 `headers`속성에 할인률에 대한 id를 넣지 않았다.

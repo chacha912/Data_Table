@@ -18,7 +18,7 @@
 ### caption, summary 요소
 
 - **caption**: caption 요소는 table 요소에 제목이나 설명을 마크업할 때 사용하는 요소이다. caption 요소는 table 요소 안에서 가장 먼저 마크업해야 하며, 필수 요소는 아니다.
-  - HTML5에 신규 추고된 figure 안에 마크업할 경우, figcaption이 caption의 역할을 대신하도록 할 수 있다.
+  - HTML5에 신규 추가된 figure 안에 마크업할 경우, figcaption이 caption의 역할을 대신하도록 할 수 있다.
 - **summary**: summary 요소는 table 내용을 요약한 내용으로 이는 HTML5 규격에서 제외되었다.
   - 요약 정보의 경우 summary 속성을 사용하여 제공할 수 있는데 해당 요약 정보를 통해 스크린 리더 사용자는 테이블의 정보를 다 듣지 않아도 어떤 내용이 포함되어 있는지 파악가능하다. HTML5 문서 형식에 맞게 요약 정보를 제공하고자 할 때는 새롭게 추가된 figure, figcaption 요소를 사용하거나 aria-describedby으로 요약 정보를 제공하고 있는 단락을 연결하거나 caption 요소 내에 포함하여 제공할 수 있다.
 
@@ -96,3 +96,14 @@ _적용 예_
 
 > Table 내의 내용 없는 셀(td) 표현
 > 값이 없거나 0인 경우에는 아무것도 없는 <td></td>와 같이 빈 셀로 표현하는 경우가 있는데 이 경우 CSS에서 `border-collapse: collapse`를 사용하지 않는 경우 설정한 border가 제대로 표현되지 않을 수 있으며, 스크린 리더를 사용할 경우 내용 없는 빈 셀은 테이블의 구조를 파악하기 어렵게 만든다. 이 경우에는 값을 사용하여 빈 데이터를 넣거나 값이 없는 경우는 '없음'과 같은 텍스트를 삽입한 후 CSS를 사용하여 텍스트를 숨겨서 제공하면 디자인상의 문제없이 table의 정보 접근성을 향상할 수 있다.
+
+## 테이블 분석
+
+- 해당 페이지에 제시된 표는 총 5개이다. 각 표는 [W3의 Web Accessbility Tutorials 중 Table Concepts](https://www.w3.org/WAI/tutorials/tables/)를 기반하여 구조적으로 분석하면 다음과 같다.
+
+1. 우체국택배(방문접수) 테이블: [Tables with irregular headers](https://www.w3.org/WAI/tutorials/tables/irregular/)
+1. 소포우편(창구접수) 테이블
+   1. 등기소포 테이블: [Tables with irregular headers](https://www.w3.org/WAI/tutorials/tables/irregular/)
+   1. 일반소포 테이블: [Tables with irregular headers](https://www.w3.org/WAI/tutorials/tables/irregular/)
+1. 부가이용 수수료 테이블: [Tables with one header](https://www.w3.org/WAI/tutorials/tables/one-header/)
+1. 소포요금 감액 범위 테이블: [Tables with irregular headers](https://www.w3.org/WAI/tutorials/tables/irregular/)

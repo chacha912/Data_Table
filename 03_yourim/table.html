@@ -28,10 +28,14 @@
             <th colspan="2" scope="col" class="pay-tbl-th">
               구 분<br />(초과 ~ 이하)
             </th>
-            <th scope="col" class="pay-tbl-th">5kg 이하<br />(80㎝ 이하)</th>
-            <th scope="col" class="pay-tbl-th">5kg∼10kg<br />(80㎝∼100㎝)</th>
-            <th scope="col" class="pay-tbl-th">10kg∼20kg<br />(100㎝∼120㎝)</th>
-            <th scope="col" class="pay-tbl-th">20kg∼30kg<br />(120㎝∼160㎝)</th>
+            <th scope="col" class="pay-tbl-th">5kg 이하<br />(80 cm 이하)</th>
+            <th scope="col" class="pay-tbl-th">5kg∼10kg<br />(80 cm∼100 cm)</th>
+            <th scope="col" class="pay-tbl-th">
+              10kg∼20kg<br />(100 cm∼120 cm)
+            </th>
+            <th scope="col" class="pay-tbl-th">
+              20kg∼30kg<br />(120 cm∼160 cm)
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -60,5 +64,107 @@
         </tbody>
       </table>
     </figure>
+    <h2>소포우편(창구접수)</h2>
+    <ol>
+      <li>
+        <span>1) 등기소포</span>
+        <figure>
+          <figcaption>
+            <strong id="parcel-charge-caption">등기소포 요금</strong>
+            <span id="parcel-charge-summary"
+              >등기소포 무게(부피)와 배송일에 따른 요금 안내</span
+            >
+          </figcaption>
+          <table
+            class="pay-table"
+            aria-labelledby="parcel-charge-caption"
+            aria-describedby="parcel-charge-summary"
+          >
+            <colgroup>
+              <col span="2" class="width-8" />
+              <col class="width-10" />
+              <col span="2" class="width-10" />
+              <col span="4" class="width-10" />
+              <col />
+            </colgroup>
+            <thead>
+              <tr>
+                <th colspan="2" rowspan="2" id="parcel-size" class="pay-tbl-th">
+                  구 분<br />(초과 ~ 이하)
+                </th>
+                <th id="size80" class="pay-tbl-th" headers="parcel-size">
+                  80 cm 이하
+                </th>
+                <th
+                  colspan="2"
+                  id="size100"
+                  class="pay-tbl-th"
+                  headers="parcel-size"
+                >
+                  80 cm∼100 cm
+                </th>
+                <th
+                  colspan="4"
+                  id="size120"
+                  class="pay-tbl-th"
+                  headers="parcel-size"
+                >
+                  100 cm∼120 cm
+                </th>
+                <th id="size160" class="pay-tbl-th" headers="parcel-size">
+                  120 cm∼160 cm
+                </th>
+              </tr>
+              <tr>
+                <th id="weight3" headers="parcel-size size80">3kg 이하</th>
+                <th id="weight5" headers="parcel-size size100">3kg∼5kg</th>
+                <th id="weight7" headers="parcel-size size100">5kg∼7kg</th>
+                <th id="weight10" headers="parcel-size size120">7kg∼10kg</th>
+                <th id="weight15" headers="parcel-size size120">10kg∼15kg</th>
+                <th id="weight20" headers="parcel-size size120">15kg∼20kg</th>
+                <th id="weight25" headers="parcel-size size120">20kg∼25kg</th>
+                <th id="weight30" headers="parcel-size size160">25kg∼30kg</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th colspan="2" id="overnight">익일배달</th>
+                <td headers="overnight size80 weight3">4,000</td>
+                <td headers="overnight size100 weight5">4,500</td>
+                <td headers="overnight size100 weight7">5,000</td>
+                <td headers="overnight size120 weight10">6,000</td>
+                <td headers="overnight size120 weight15">7,000</td>
+                <td headers="overnight size120 weight20">8,000</td>
+                <td headers="overnight size120 weight25">9,000</td>
+                <td headers="overnight size160 weight30">11,000</td>
+              </tr>
+              <tr>
+                <th rowspan="2" id="jeju">제주</th>
+                <th id="overnightJeju" headers="jeju">익일<br />배달</th>
+                <td headers="jeju overnightJeju size80 weight3">6,500</td>
+                <td headers="jeju overnightJeju size100 weight5">7,000</td>
+                <td headers="jeju overnightJeju size100 weight7">7,500</td>
+                <td headers="jeju overnightJeju size120 weight10">8,500</td>
+                <td headers="jeju overnightJeju size120 weight15">9,500</td>
+                <td headers="jeju overnightJeju size120 weight20">10,500</td>
+                <td headers="jeju overnightJeju size120 weight25">11,500</td>
+                <td headers="jeju overnightJeju size160 weight30">13,500</td>
+              </tr>
+              <tr>
+                <th id="day2Jeju" headers="jeju">D+2일<br />배달</th>
+                <td headers="jeju day2Jeju size80 weight3">4,000</td>
+                <td headers="jeju day2Jeju size100 weight5">4,500</td>
+                <td headers="jeju day2Jeju size100 weight7">5,000</td>
+                <td headers="jeju day2Jeju size120 weight10">6,000</td>
+                <td headers="jeju day2Jeju size120 weight15">7,000</td>
+                <td headers="jeju day2Jeju size120 weight20">8,000</td>
+                <td headers="jeju day2Jeju size120 weight25">9,000</td>
+                <td headers="jeju day2Jeju size160 weight30">11,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </figure>
+      </li>
+    </ol>
   </body>
 </html>

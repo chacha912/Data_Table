@@ -1,7 +1,8 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
 /* 숨김 콘텐츠 */
-figcaption {
+figcaption,
+caption {
   position: absolute;
   width: 1px;
   height: 1px;

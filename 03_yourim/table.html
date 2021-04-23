@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>인터넷우체국 - 우체국택배 요금안내</title>
+    <link rel="stylesheet" href="./table.css" />
+  </head>
+  <body>
+    <h1>요금안내</h1>
+    <h2>우체국택배(방문접수)</h2>
+    <p>고객이 원하는 장소로 우체국직원이 방문하여 접수하는 서비스</p>
+    <figure>
+      <figcaption>
+        <strong id="delivery-charge-caption">우체국택배 방문접수 요금</strong>
+        <span id="delivery-charge-summary"
+          >택배 무게(부피)와 배송일에 따른 요금 안내</span
+        >
+      </figcaption>
+      <table
+        class="pay-table"
+        aria-labelledby="delivery-charge-caption"
+        aria-describedby="delivery-charge-summary"
+      >
+        <thead>
+          <tr>
+            <th colspan="2" scope="row" class="pay-tbl-th">
+              구 분<br />(초과 ~ 이하)
+            </th>
+            <th scope="col" class="pay-tbl-th">5kg 이하<br />(80 cm 이하)</th>
+            <th scope="col" class="pay-tbl-th">5kg∼10kg<br />(80 cm∼100 cm)</th>
+            <th scope="col" class="pay-tbl-th">
+              10kg∼20kg<br />(100 cm∼120 cm)
+            </th>
+            <th scope="col" class="pay-tbl-th">
+              20kg∼30kg<br />(120 cm∼160 cm)
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" colspan="2">익일배달</th>
+            <td>5,000</td>
+            <td>8,000</td>
+            <td>10,000</td>
+            <td>12,000</td>
+          </tr>
+          <tr>
+            <th scope="rowgroup" rowspan="2">제주</th>
+            <th scope="row">익일배달</th>
+            <td>7,500</td>
+            <td>10,500</td>
+            <td>12,500</td>
+            <td>14,500</td>
+          </tr>
+          <tr>
+            <th scope="row">D+2일 배달</th>
+            <td>5,000</td>
+            <td>8,000</td>
+            <td>10,000</td>
+            <td>12,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </figure>
+    <h2>소포우편(창구접수)</h2>
+    <ol>
+      <li>
+        <span>1) 등기소포</span>
+        <figure>
+          <figcaption>
+            <strong id="express-parcel-charge-caption">등기소포 요금</strong>
+            <span id="express-parcel-charge-summary"
+              >등기소포 무게(부피)와 배송일에 따른 요금 안내</span
+            >
+          </figcaption>
+          <table
+            class="pay-table"
+            aria-labelledby="express-parcel-charge-caption"
+            aria-describedby="express-parcel-charge-summary"
+          >
+            <colgroup>
+              <col span="2" class="width-8" />
+              <col class="width-10" />
+              <col span="2" class="width-10" />
+              <col span="4" class="width-10" />
+              <col />
+            </colgroup>
+            <thead>
+              <tr>
+                <th colspan="2" rowspan="2" id="parcel-size" class="pay-tbl-th">
+                  구 분<br />(초과 ~ 이하)
+                </th>
+                <th id="size80" class="pay-tbl-th" headers="parcel-size">
+                  80 cm 이하
+                </th>
+                <th
+                  colspan="2"
+                  id="size100"
+                  class="pay-tbl-th"
+                  headers="parcel-size"
+                >
+                  80 cm∼100 cm
+                </th>
+                <th
+                  colspan="4"
+                  id="size120"
+                  class="pay-tbl-th"
+                  headers="parcel-size"
+                >
+                  100 cm∼120 cm
+                </th>
+                <th id="size160" class="pay-tbl-th" headers="parcel-size">
+                  120 cm∼160 cm
+                </th>
+              </tr>
+              <tr>
+                <th id="weight3" headers="parcel-size size80">3kg 이하</th>
+                <th id="weight5" headers="parcel-size size100">3kg∼5kg</th>
+                <th id="weight7" headers="parcel-size size100">5kg∼7kg</th>
+                <th id="weight10" headers="parcel-size size120">7kg∼10kg</th>
+                <th id="weight15" headers="parcel-size size120">10kg∼15kg</th>
+                <th id="weight20" headers="parcel-size size120">15kg∼20kg</th>
+                <th id="weight25" headers="parcel-size size120">20kg∼25kg</th>
+                <th id="weight30" headers="parcel-size size160">25kg∼30kg</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th colspan="2" id="overnight">익일배달</th>
+                <td headers="overnight size80 weight3">4,000</td>
+                <td headers="overnight size100 weight5">4,500</td>
+                <td headers="overnight size100 weight7">5,000</td>
+                <td headers="overnight size120 weight10">6,000</td>
+                <td headers="overnight size120 weight15">7,000</td>
+                <td headers="overnight size120 weight20">8,000</td>
+                <td headers="overnight size120 weight25">9,000</td>
+                <td headers="overnight size160 weight30">11,000</td>
+              </tr>
+              <tr>
+                <th rowspan="2" id="jeju">제주</th>
+                <th id="overnightJeju" headers="jeju">익일<br />배달</th>
+                <td headers="jeju overnightJeju size80 weight3">6,500</td>
+                <td headers="jeju overnightJeju size100 weight5">7,000</td>
+                <td headers="jeju overnightJeju size100 weight7">7,500</td>
+                <td headers="jeju overnightJeju size120 weight10">8,500</td>
+                <td headers="jeju overnightJeju size120 weight15">9,500</td>
+                <td headers="jeju overnightJeju size120 weight20">10,500</td>
+                <td headers="jeju overnightJeju size120 weight25">11,500</td>
+                <td headers="jeju overnightJeju size160 weight30">13,500</td>
+              </tr>
+              <tr>
+                <th id="day2Jeju" headers="jeju">D+2일<br />배달</th>
+                <td headers="jeju day2Jeju size80 weight3">4,000</td>
+                <td headers="jeju day2Jeju size100 weight5">4,500</td>
+                <td headers="jeju day2Jeju size100 weight7">5,000</td>
+                <td headers="jeju day2Jeju size120 weight10">6,000</td>
+                <td headers="jeju day2Jeju size120 weight15">7,000</td>
+                <td headers="jeju day2Jeju size120 weight20">8,000</td>
+                <td headers="jeju day2Jeju size120 weight25">9,000</td>
+                <td headers="jeju day2Jeju size160 weight30">11,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </figure>
+      </li>
+      <li>
+        <span>2) 일반소포</span>
+        <figure>
+          <figcaption>
+            <strong id="parcel-charge-caption">일반소포 요금</strong>
+            <span id="parcel-charge-summary"
+              >일반소포 무게(부피)에 따른 요금 안내</span
+            >
+          </figcaption>
+          <table
+            class="pay-table"
+            aria-labelledby="parcel-charge-caption"
+            aria-describedby="parcel-charge-summary"
+          >
+            <colgroup>
+              <col span="2" class="width-8" />
+              <col class="width-10" />
+              <col span="2" class="width-10" />
+              <col span="4" class="width-10" />
+              <col />
+            </colgroup>
+            <thead>
+              <tr>
+                <th colspan="2" rowspan="2" scope="rowgroup" class="pay-tbl-th">
+                  구 분<br />(초과 ~ 이하)
+                </th>
+                <th scope="colgroup" class="pay-tbl-th">80 cm 이하</th>
+                <th colspan="2" scope="colgroup" class="pay-tbl-th">
+                  80 cm∼100 cm
+                </th>
+                <th colspan="4" scope="colgroup" class="pay-tbl-th">
+                  100 cm∼120 cm
+                </th>
+                <th scope="colgroup" class="pay-tbl-th">120 cm∼160 cm</th>
+              </tr>
+              <tr>
+                <th scope="col">3kg 이하</th>
+                <th scope="col">3kg∼5kg</th>
+                <th scope="col">5kg∼7kg</th>
+                <th scope="col">7kg∼10kg</th>
+                <th scope="col">10kg∼15kg</th>
+                <th scope="col">15kg∼20kg</th>
+                <th scope="col">20kg∼25kg</th>
+                <th scope="col">25kg∼30kg</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th colspan="2" scope="row">D+3일 배달</th>
+                <td>2,700</td>
+                <td>3,200</td>
+                <td>3,700</td>
+                <td>4,700</td>
+                <td>5,700</td>
+                <td>6,700</td>
+                <td>7,700</td>
+                <td>9,700</td>
+              </tr>
+            </tbody>
+          </table>
+        </figure>
+      </li>
+    </ol>
+    <h2>부가이용 수수료(등기소포를 전제로 취급지역에 한함)</h2>
+    <table class="pay-table">
+      <caption>
+        등기소포 부가이용 수수료
+      </caption>
+      <thead>
+        <tr>
+          <th scope="row" class="pay-tbl-th">구분</th>
+          <th scope="col" class="pay-tbl-th">당일특급</th>
+          <th scope="col" class="pay-tbl-th">착불소포</th>
+          <th scope="col" class="pay-tbl-th">안심소포</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">수수료(1개당)</th>
+          <td>
+            지역구분 요금<br />- 지역 내 : 5,000원<br />- 지역 간 : 10,000원
+          </td>
+          <td>500원</td>
+          <td>1,000원 + 손해배상한도액 초과시<br />10만원마다 500원</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>소포요금 감액</h2>
+    <p>2. 요금감액 범위</p>
+    <table class="pay-table">
+      <caption>
+        납부방법에 따른 요금감액
+      </caption>
+      <thead>
+        <tr>
+          <th id="condition" class="pay-tbl-th" colspan="2">납부방법/할인율</th>
+          <th id="percent5" class="pay-tbl-th" headers="condition">5%</th>
+          <th id="percent10" class="pay-tbl-th" headers="condition">10%</th>
+          <th id="percent15" class="pay-tbl-th" headers="condition">15%</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th id="counter" rowspan="2" headers="condition">창구소포</th>
+          <th id="prepaid" headers="condition counter">요금즉납</th>
+          <td headers="condition counter prepaid percent5">3개 이상</td>
+          <td headers="condition counter prepaid percent10">10개 이상</td>
+          <td headers="condition counter prepaid percent15">50개 이상</td>
+        </tr>
+        <tr>
+          <th id="collect" headers="condition counter">요금후납</th>
+          <td headers="condition counter collect percent5">70개 이상</td>
+          <td headers="condition counter collect percent10">100개 이상</td>
+          <td headers="condition counter collect percent15">130개 이상</td>
+        </tr>
+        <tr>
+          <th id="pickUp" headers="condition">방문접수</th>
+          <th id="info" headers="condition pickUp">접수정보<br />사전연계</th>
+          <td colspan="3" headers="condition pickUp info">
+            개당 500원 감액<br />(접수정보 입력, 사전결제, 픽업장소 지정 시)
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>이용시 유의사항</h2>
+    <p id="region-caption">당일특급서비스의 지역구분</p>
+    <table aria-labelledby="region-caption" class="region-tbl">
+      <tbody>
+        <tr>
+          <td>서울 / 인천 / 경기</td>
+          <td>부산 / 울산 / 경남</td>
+          <td>대전 / 세종 / 충남</td>
+          <td>충북</td>
+          <td>광주 / 전남</td>
+          <td>대구 / 경북</td>
+          <td>전북</td>
+          <td>강원</td>
+          <td>제주</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

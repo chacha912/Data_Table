@@ -1,0 +1,91 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+/* 숨김 콘텐츠 */
+figcaption,
+caption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  visibility: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+}
+
+body {
+  padding: 20px 40px 60px;
+  font-family: "Spoqa Han Sans", "sans-serif";
+  font-weight: 400;
+  color: #181818;
+  font-size: 14px;
+}
+
+h2 {
+  margin-top: 60px;
+}
+
+table {
+  width: 1100px;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+figure {
+  margin: 0;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pay-table {
+  border-top: 2px solid #888;
+}
+
+.pay-table thead {
+  background-color: #f0f0f094;
+}
+
+.pay-table th,
+.pay-table td {
+  padding: 6px 0;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.pay-table .pay-tbl-th {
+  font-weight: 400;
+}
+
+.pay-table .width-8 {
+  width: 8%;
+}
+
+.pay-table .width-10 {
+  width: 10%;
+}
+
+.pay-table caption + thead th {
+  border-bottom: none;
+}
+
+ol li {
+  margin-bottom: 20px;
+}
+
+ol li span {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.region-tbl td {
+  padding: 6px 0;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+  font-size: 13px;
+}

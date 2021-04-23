@@ -10,10 +10,15 @@
   <body>
     <h1 class="a11y-hidden">표 과제</h1>
 
-    <table>
+    <table
+      summary="우체국 택배 - 고객이 원하는 장소로 우체국 직원이 직접 방문하여 접수하는 서비스에 대한 가격 표"
+    >
       <caption class="a11y-hidden">
         우체국 택배(방문접수)
       </caption>
+
+      <colgroup span="2"></colgroup>
+
       <thead>
         <tr>
           <th colspan="2" scope="row">구 분 (초과 ~ 이하)</th>
@@ -49,71 +54,84 @@
       </tbody>
     </table>
 
-    <table>
+    <table summary="창구에서 접수하는 등기소포 가격 표">
       <caption class="a11y-hidden">
         소포 우편 - 등기 소포(창구 접수)
       </caption>
+
+      <colgroup span="2"></colgroup>
+      <colgroup sapn="1"></colgroup>
+      <colgroup span="2"></colgroup>
+      <colgroup span="4"></colgroup>
+      <colgroup span="1"></colgroup>
       <thead>
         <tr>
-          <th colspan="2" rowspan="2" scope="">구분</th>
-          <th scope="col">80cm 이하</th>
-          <th scope="colgroup" colspan="2">80cm∼100cm</th>
-          <th scope="colgroup" colspan="4">100cm∼120cm</th>
-          <th scope="col">120cm~160cm</th>
+          <th colspan="2" rowspan="2" id="sep">구분</th>
+          <th id="col-1">80cm 이하</th>
+          <th id="col-2" colspan="2">80cm∼100cm</th>
+          <th id="col-3" colspan="4">100cm∼120cm</th>
+          <th id="col-4">120cm~160cm</th>
         </tr>
         <tr>
-          <th scope="col">3kg 이하</th>
-          <th scope="col">3kg∼5kg</th>
-          <th scope="col">5kg∼7kg</th>
-          <th scope="col">7kg~10kg</th>
-          <th scope="col">10kg~15kg</th>
-          <th scope="col">15kg~20kg</th>
-          <th scope="col">20kg~25kg</th>
-          <th scope="col">25kg~30kg</th>
+          <th id="col-1-1">3kg 이하</th>
+          <th id="col-2-1">3kg∼5kg</th>
+          <th id="col-2-2">5kg∼7kg</th>
+          <th id="col-3-1">7kg~10kg</th>
+          <th id="col-3-2">10kg~15kg</th>
+          <th id="col-3-3">15kg~20kg</th>
+          <th id="col-3-4">20kg~25kg</th>
+          <th id="col-4-1">25kg~30kg</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th colspan="2" scope="row">익일 배달</th>
-          <td>5,000</td>
-          <td>8,000</td>
-          <td>10,000</td>
-          <td>12,000</td>
-          <td>5,000</td>
-          <td>8,000</td>
-          <td>10,000</td>
-          <td>12,000</td>
+          <th colspan="2" id="row-1">익일 배달</th>
+          <td headers="col-1 col-1-1 row-1">5,000</td>
+          <td headers="col-2 col-2-1 row-1">8,000</td>
+          <td headers="col-2 col-2-2 row-1">10,000</td>
+          <td headers="col-3 col-3-1 row-1">12,000</td>
+          <td headers="col-3 col-3-2 row-1">5,000</td>
+          <td headers="col-3 col-3-3 row-1">8,000</td>
+          <td headers="col-3 col-3-4 row-1">10,000</td>
+          <td headers="col-4 col-4-1 row-1">12,000</td>
         </tr>
         <tr>
-          <th rowspan="2" scope="rowgroup">제주</th>
-          <th scope="row">익일 배달</th>
-          <td>5,000</td>
-          <td>8,000</td>
-          <td>10,000</td>
-          <td>12,000</td>
-          <td>5,000</td>
-          <td>8,000</td>
-          <td>10,000</td>
-          <td>12,000</td>
+          <th rowspan="2" id="row-2">제주</th>
+          <th id="row-2-1">익일 배달</th>
+          <td headers="col-1 col-1-1 row-2 row-2-1">5,000</td>
+          <td headers="col-2 col-2-1 row-2 row-2-1">8,000</td>
+          <td headers="col-2 col-2-2 row-2 row-2-1">10,000</td>
+          <td headers="col-3 col-3-1 row-2 row-2-1">12,000</td>
+          <td headers="col-3 col-3-2 row-2 row-2-1">5,000</td>
+          <td headers="col-3 col-3-3 row-2 row-2-1">8,000</td>
+          <td headers="col-3 col-3-4 row-2 row-2-1">10,000</td>
+          <td headers="col-4 col-4-1 row-2 row-2-1">12,000</td>
         </tr>
         <tr>
-          <th scope="row">D+2일 배달</th>
-          <td>5,000</td>
-          <td>8,000</td>
-          <td>10,000</td>
-          <td>12,000</td>
-          <td>5,000</td>
-          <td>8,000</td>
-          <td>10,000</td>
-          <td>12,000</td>
+          <th id="row-2-2">D+2일 배달</th>
+          <td headers="col-1 col-1-1 row-2 row-2-2">5,000</td>
+          <td headers="col-2 col-2-1 row-2 row-2-2">8,000</td>
+          <td headers="col-2 col-2-2 row-2 row-2-2">10,000</td>
+          <td headers="col-3 col-3-1 row-2 row-2-2">12,000</td>
+          <td headers="col-3 col-3-2 row-2 row-2-2">5,000</td>
+          <td headers="col-3 col-3-3 row-2 row-2-2">8,000</td>
+          <td headers="col-3 col-3-4 row-2 row-2-2">10,000</td>
+          <td headers="col-4 col-4-1 row-2 row-2-2">12,000</td>
         </tr>
       </tbody>
     </table>
 
-    <table>
+    <table summary="창구에서 접수하는 일반소포 가격 표">
       <caption class="a11y-hidden">
         소포 우편 - 일반 소포(창구 접수)
       </caption>
+
+      <col />
+      <colgroup span="1"></colgroup>
+      <colgroup span="2"></colgroup>
+      <colgroup span="4"></colgroup>
+      <colgroup span="1"></colgroup>
+
       <thead>
         <tr>
           <th colspan="2" rowspan="2">구분</th>
@@ -148,10 +166,13 @@
       </tbody>
     </table>
 
-    <table>
+    <table
+      summary="등기소포를 전제로 취급지역에 한하는 부가이용 수수료에 대한 표"
+    >
       <caption class="a11y-hidden">
         부가이용 수수료(등기소포를 전제로 취급지역에 한함)
       </caption>
+
       <thead>
         <tr>
           <th scope="col">구분</th>
@@ -170,7 +191,7 @@
       </tbody>
     </table>
 
-    <table>
+    <table summary="소포요금 감액 범위에 대한 표">
       <caption class="a11y-hidden">
         소포요금 감액 - 요금감액 범위
       </caption>

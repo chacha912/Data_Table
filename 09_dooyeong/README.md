@@ -79,6 +79,14 @@
 
 즉, `Mars` 와 `Venus` 로 구분된 열 하위에 `Produced`, `Sold`라는 구분이 각각 되어있는 것을 확인할 수 있는데 이렇게 열의 헤더가 단순히 하나만으로 구성되어 있지 않은 경우에는 `colgroup` 속성을 사용해서 명시하라고 되어있는 것을 확인할 수 있다. 그리고 첫 번째 레벨의 헤더에 각각 `scope` 속성을 주어 해당 열이 연관되어 있다는 사실을 명시하라고 되어있다.
 
+<img src="./img/table_aria.png" alt="w3c example for table with two tier headers" width="800" />
+
+그리고 위 그림(표)는 w3c에서 WAI-ARIA와 TABLE에 관련한 정보 페이지이다. 이것을 보게되면 `aria`의 `role`로 `table`, `rowgroup`, `row`, `columheader`, `cell` 등이 존재하고, `attribute`로는 `aria-label`로 테이블의 값을 주고 `aria-describedby`로 테이블의 정보(`caption`)을 간단히 명시해주는 것을 볼 수 있다. WAI-ARIA에 대해서 모르고 있었던 부분이 너무 많았다는 것을 느꼈고, 간단한 table 태그에 조차 이렇게 많은 접근성을 고려할 수 있다는 것을 깨달았다.
+
+<img src="./img/table_aria_1.png" alt="w3c example for table with two tier headers" width="800" />
+
+위 코드는 WAI-ARIA를 적용한 예시 코드 중 일부이다. 그러니까 `table` 태그나 `tr`, `td`와 같은 _semantic_ 하지 않은 태그들을 사용했을 경우에 부수적으로 기재해주는 속성인 것이다. 아무래도 _semantic_ 한 태그들과 속성들을 사용해주는 것이 더 좋아보이기 때문에 뒤의 실습에서는 `table`, `thead`, `tbody`, `tr` 등의 태그를 사용하고 `caption`, `scope`, `id`, `headers`를 활용해 테이블을 그려보았다.
+
 아래 있는 실습 단계에서 이를 참고하여 접근성이 높은 테이블을 구성해보았기 때문에 나중에 확인해볼 수 있고, 여기에서는 접근성에 매우 중요한 몇 가지 중요한 정보들에 대해 자세히 알아보겠다.
 
 ### 2.1. `caption`

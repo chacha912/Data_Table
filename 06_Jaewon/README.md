@@ -117,9 +117,9 @@
 - 당장 나 또한 장애를 가질 수 있다는 생각을 하게 되니 남일 같다는 생각이 들지 않았다. 이번 기회를 통해 접근성을 지키기 위해 사람들이 하는 많은 생각들을 공부해보는 좋은 기회였던 것 같다.
 
 ## 공부한 문서들
-https://webclub.tistory.com/264
-https://seulbinim.github.io/WSA/table.html#table-tr-th-td-%EC%9A%94%EC%86%8C
-https://developer.mozilla.org/ko/docs/Web/HTML/Element/table
-https://www.w3.org/WAI/tutorials/tables/
-https://www.w3schools.com/html/html_tables.asp
-http://www.tcpschool.com/html/html_basic_tables
+https://webclub.tistory.com/264  
+https://seulbinim.github.io/WSA/table.html#table-tr-th-td-%EC%9A%94%EC%86%8C  
+https://developer.mozilla.org/ko/docs/Web/HTML/Element/table  
+https://www.w3.org/WAI/tutorials/tables/  
+https://www.w3schools.com/html/html_tables.asp  
+http://www.tcpschool.com/html/html_basic_tables  

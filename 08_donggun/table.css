@@ -1,0 +1,48 @@
+caption .hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    visibility: hidden;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 1200px;
+}
+
+td,
+th {
+    border: 1px solid black;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    font-weight: 400;
+    margin: 0;
+}
+
+thead th {
+    background-color: #d1d5da;
+}
+
+tbody th {
+    background-color: rgba(241, 236, 236, 0.74);
+}
+
+caption span {
+    font-size: 0.8rem;
+}
+
+caption {
+    margin-bottom: 10px;
+}
+
+caption strong,
+caption span,
+caption p {
+    float: left;
+}

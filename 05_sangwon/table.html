@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우체국 택배&gt;이용안내&gt;요금안내</title>
+    <link rel="stylesheet" href="./table.css">
+</head>
+
+<body>
+    <h1>요금안내</h1>
+
+    <!-- 1st Table -->
+    <section class="first">
+        <h2>우체국택배(방문접수)</h2>
+        <table>
+            <caption>우체국택배(방문접수)<br>
+                <span>고객이 원하는 장소로 우체국직원이 방문하여 접수하는 서비스</span></caption>
+            <thead>
+                <tr>
+                    <th id="visitSortation" colspan="2" scope="colgroup">구분<br>(초과 ~ 이하)</th>
+                    <th scope="col" id="visitWeight10" headers="visitSortation">5kg ~ 10kg<br>(80cm 이하)</th>
+                    <th scope="col" id="visitWeight15" headers="visitSortation">10kg ~ 15kg<br>(80cm ~ 100cm)</th>
+                    <th scope="col" id="visitWeight20" headers="visitSortation">15kg ~ 20kg<br>(100cm ~ 120cm)</th>
+                    <th scope="col" id="visitWeight25" headers="visitSortation">20kg ~ 25kg<br>(120cm ~ 160cm)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th colspan="2" id="visitNextDayDelivery" headers="visitSortation">익일배달</th>
+                    <td headers="visitWeight10 visitNextDayDelivery">5,000</td>
+                    <td headers="visitWeight15 visitNextDayDelivery">8,000</td>
+                    <td headers="visitWeight20 visitNextDayDelivery">10,000</td>
+                    <td headers="visitWeight25 visitNextDayDelivery">12,000</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <th rowspan="2" id="visitJeju" headers="visitSortation">제주</th>
+                    <th id="visitJejuNextDayDelivery" headers="visitSortation visitJeju">익일배달</th>
+                    <td headers="visitWeight10 visitJeju visitJejuNextDayDelivery">7,500</td>
+                    <td headers="visitWeight15 visitJeju visitJejuNextDayDelivery">10,000</td>
+                    <td headers="visitWeight20 visitJeju visitJejuNextDayDelivery">12,500</td>
+                    <td headers="visitWeight25 visitJeju visitJejuNextDayDelivery">14,500</td>
+                </tr>
+                <tr>
+                    <th id="visitJejuTwoDaysDelivery" headers="visitSortation visitJeju">D+2일 배달</th>
+                    <td headers="visitWeight10 visitJeju visitJejuTwoDaysDelivery">5,000</td>
+                    <td headers="visitWeight15 visitJeju visitJejuTwoDaysDelivery">8,000</td>
+                    <td headers="visitWeight20 visitJeju visitJejuTwoDaysDelivery">10,000</td>
+                    <td headers="visitWeight25 visitJeju visitJejuTwoDaysDelivery">12,000</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- 2nd Table -->
+    <section class="second">
+        <h2>소포우편(창구접수) - 등기소포</h2>
+        <table>
+            <caption>소포우편(창구접수)-등기소포</caption>
+            <colgroup>
+                <col span="2">
+                <col>
+                <col span="2">
+                <col span="4">
+                <col>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th id="regSortation" colspan="2" rowspan="2">구분<br>(초과 ~ 이하)</th>
+                    <th id="regLength80" headers="regSortation">80cm 이하</th>
+                    <th colspan="2" id="regLength100" headers="regSortation">80cm ~ 100cm</th>
+                    <th colspan="4" id="regLength120" headers="regSortation">100cm ~ 120cm</th>
+                    <th id="regLength160" headers="regSortation">120cm ~ 160cm</th>
+                </tr>
+                <tr>
+                    <th id="regWeight3" headers="regSortation">3kg 이하</th>
+                    <th id="regWeight5" headers="regSortation">3kg ~ 5kg</th>
+                    <th id="regWeight7" headers="regSortation">5kg ~ 7kg</th>
+                    <th id="regWeight10" headers="regSortation">7kg ~ 10kg</th>
+                    <th id="regWeight15" headers="regSortation">10kg ~ 15g</th>
+                    <th id="regWeight20" headers="regSortation">15kg ~ 20kg</th>
+                    <th id="regWeight25" headers="regSortation">20kg ~ 25kg</th>
+                    <th id="regWeight30" headers="regSortation">25kg ~ 30kg</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th colspan="2" id="normalNextDayDelivery" headers="regSortation">익일배달</th>
+                    <td headers="regLength80 regWeight3 normalNextDayDelivery">4,000</td>
+                    <td headers="regLength100 regWeight5 normalNextDayDelivery">4,500</td>
+                    <td headers="regLength100 regWeight7 normalNextDayDelivery">5,000</td>
+                    <td headers="regLength120 regWeight10 normalNextDayDelivery">6,000</td>
+                    <td headers="regLength120 regWeight15 normalNextDayDelivery">7,000</td>
+                    <td headers="regLength120 regWeight20 normalNextDayDelivery">8,000</td>
+                    <td headers="regLength120 regWeight25 normalNextDayDelivery">9,000</td>
+                    <td headers="regLength160 regWeight30 normalNextDayDelivery">11,000</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <th rowspan="2" id="regJeju" headers="regSortation">제주</th>
+                    <th id="regJejuNextDayDelivery" headers="regSortation regJeju">익일<br>배달</th>
+                    <td headers="regLength80 regWeight3 regJeju regJejuNextDayDelivery">6,500</td>
+                    <td headers="regLength100 regWeight5 regJeju regJejuNextDayDelivery">7,000</td>
+                    <td headers="regLength100 regWeight7 regJeju regJejuNextDayDelivery">7,500</td>
+                    <td headers="regLength120 regWeight10 regJeju regJejuNextDayDelivery">8,500</td>
+                    <td headers="regLength120 regWeight15 regJeju regJejuNextDayDelivery">9,500</td>
+                    <td headers="regLength120 regWeight20 regJeju regJejuNextDayDelivery">10,500</td>
+                    <td headers="regLength120 regWeight25 regJeju regJejuNextDayDelivery">11,500</td>
+                    <td headers="regLength160 regWeight30 regJeju regJejuNextDayDelivery">13,500</td>
+                </tr>
+                <tr>
+                    <th id="regJejuTwoDaysDelivery" headers="regSortation regJeju">D+2일<br>배달</th>
+                    <td headers="regLength80 regWeight3 regJeju regJejuTwoDaysDelivery">6,500</td>
+                    <td headers="regLength100 regWeight5 regJeju regJejuTwoDaysDelivery">7,000</td>
+                    <td headers="regLength100 regWeight7 regJeju regJejuTwoDaysDelivery">7,500</td>
+                    <td headers="regLength120 regWeight10 regJeju regJejuTwoDaysDelivery">8,500</td>
+                    <td headers="regLength120 regWeight15 regJeju regJejuTwoDaysDelivery">9,500</td>
+                    <td headers="regLength120 regWeight20 regJeju regJejuTwoDaysDelivery">10,500</td>
+                    <td headers="regLength120 regWeight25 regJeju regJejuTwoDaysDelivery">11,500</td>
+                    <td headers="regLength160 regWeight30 regJeju regJejuTwoDaysDelivery">13,500</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- 3rd Table -->
+    <section class="third">
+        <h2>소포우편(창구접수) - 일반소포</h2>
+        <table>
+            <caption>소포우편(창구접수)-일반소포</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2" id="norSortation">구분<br>(초과 ~ 이하)</th>
+                    <th id="norLength80" headers="norSortation">80cm 이하</th>
+                    <th colspan="2" id="norLength100" headers="norSortation">80cm ~ 100cm</th>
+                    <th colspan="4" id="norLength120" headers="norSortation">100cm ~ 120cm</th>
+                    <th id="norLength160" headers="norSortation">120cm ~ 160cm</th>
+                </tr>
+                <tr>
+                    <th id="norWeight3" headers="norSortation">3kg 이하</th>
+                    <th id="norWeight5" headers="norSortation">3kg ~ 5kg</th>
+                    <th id="norWeight7" headers="norSortation">5kg ~ 7kg</th>
+                    <th id="norWeight10" headers="norSortation">7kg ~ 10kg</th>
+                    <th id="norWeight15" headers="norSortation">10kg ~ 15g</th>
+                    <th id="norWeight20" headers="norSortation">15kg ~ 20kg</th>
+                    <th id="norWeight25" headers="norSortation">20kg ~ 25kg</th>
+                    <th id="norWeight30" headers="norSortation">25kg ~ 30kg</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th id="normalThreeDaysDelivery" headers="norSortation">D+3일 배달</th>
+                    <td headers="norLength80 norWeight3 normalThreeDaysDelivery">2,700</td>
+                    <td headers="norLength100 norWeight5 normalThreeDaysDelivery">3,200</td>
+                    <td headers="norLength100 norWeight7 normalThreeDaysDelivery">3,700</td>
+                    <td headers="norLength120 norWeight10 normalThreeDaysDelivery">4,700</td>
+                    <td headers="norLength120 norWeight15 normalThreeDaysDelivery">5,700</td>
+                    <td headers="norLength120 norWeight20 normalThreeDaysDelivery">6,700</td>
+                    <td headers="norLength120 norWeight25 normalThreeDaysDelivery">7,700</td>
+                    <td headers="norLength160 norWeight30 normalThreeDaysDelivery">9,700</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- 4th Table -->
+    <section class="fourth">
+        <h2>부가이용 수수료(등기소포를 전제로 취급지역에 한함)</h2>
+        <table>
+            <caption>부가이용 수수료</caption>
+            <colgroup>
+                <col>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">구분</th>
+                    <th scope="col">당일특급</th>
+                    <th scope="col">착불소포</th>
+                    <th scope="col">안심소포</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">수수료(1개당)</th>
+                    <td>지역구분 요금<br>- 지역 내 : 5,000원<br>- 지역 간 : 10,000원</td>
+                    <td>500원</td>
+                    <td>1,000원 + 손해배상한도액 초과시<br>10만원마다 500원</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- 5th Table -->
+        <h2>소포요금 감액</h2>
+        <table>
+            <caption>소포요금 감액</caption>
+            <thead>
+                <tr>
+                    <th colspan="2" id="costSortation">납부방법/할인율</th>
+                    <th id="percent5" headers="costSortation">5%</th>
+                    <th id="percent10" headers="costSortation">10%</th>
+                    <th id="percent15" headers="costSortation">15%</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="2" id="counterParcel" headers="costSortation">창구소포</th>
+                    <th id="immediatePayment" headers="costSortation counterParcel">요금즉납</th>
+                    <td headers="percent5 counterParcel immediatePayment">3개 이상</td>
+                    <td headers="percent10 counterParcel immediatePayment">10개 이상</td>
+                    <td headers="percent15 counterParcel immediatePayment">50개 이상</td>
+                </tr>
+                <tr>
+                    <th id="postPayment" headers="costSortation counterParcel">요금후납</th>
+                    <td headers="percent5 counterParcel postPayment">70개 이상</td>
+                    <td headers="percent10 counterParcel postPayment">100개 이상</td>
+                    <td headers="percent15 counterParcel postPayment">130개 이상</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <th id="visitReception" headers="costSortation">방문접수</th>
+                    <th id="receptionInfo" headers="costSortation visitReception">접수정보<br>사전연계</th>
+                    <td colspan="3" headers="percent5 percent10 percent15 visitReception receptionInfo">개당 500원
+                        감액<br>(접수정보
+                        입력, 사전결제, 픽업장소 지정 시)</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- 6th Table -->
+    <section class="sixth">
+        <h2>이용시 유의사항</h2>
+        <table class="sixth-table">
+            <caption>지역구분</caption>
+            <colgroup>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <tbody>
+                <tr>
+                    <td>서울 / 인천 / 경기</td>
+                    <td>부산 / 울산 / 경남</td>
+                    <td>대전 / 세종 / 충남</td>
+                    <td>충북</td>
+                    <td>광주 / 전남</td>
+                    <td>대구 / 경북</td>
+                    <td>전북</td>
+                    <td>강원</td>
+                    <td>제주</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+
+</html>

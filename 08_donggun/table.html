@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./table.css">
+    <title>접근성 고려 표</title>
+</head>
+
+<body>
+    <table class="visit-service">
+        <caption>
+            <strong>우체국택배(방문접수)</strong>
+            <br>
+            <span>고객이 원하는 장소로 우체국직원이 방문하여 접수하는 서비스</span>
+            <p class="hidden">우체국택배 방문접수 이용시 무게 및 지역별 상세적인 요금 안내</p>
+        </caption>
+        <thead>
+            <tr>
+                <th colspan="2" scope="col">
+                    구분
+                    <br>
+                    <span aria-hidden="true">(</span>초과 ~ 이하<span aria-hidden="true">)</span>
+                </th>
+                <th scope="col">
+                    5kg 이하
+                    <br>
+                    <span aria-hidden="true">(</span>80㎝ 이하<span aria-hidden="true">)</span>
+                </th>
+                <th scope="col">
+                    5kg∼10kg
+                    <br>
+                    <span aria-hidden="true">(</span>80㎝∼100㎝<span aria-hidden="true">)</span>
+                </th>
+                <th scope="col">
+                    10kg∼20kg
+                    <br>
+                    <span aria-hidden="true">(</span>100㎝∼120㎝<span aria-hidden="true">)</span>
+                </th>
+                <th scope="col">
+                    20kg∼30kg
+                    <br>
+                    <span aria-hidden="true">(</span>120㎝∼160㎝<span aria-hidden="true">)</span>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" colspan="2">익일배달</th>
+                <td>5,000</td>
+                <td>8,000</td>
+                <td>10,000</td>
+                <td>12,000</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="2">제주</th>
+                <th scope="row">익일배달</th>
+                <td>7,500</td>
+                <td>10,500</td>
+                <td>12,500</td>
+                <td>14,500</td>
+            </tr>
+            <tr>
+                <th scope="row">D+2일 배달</th>
+                <td>5,000</td>
+                <td>8,000</td>
+                <td>10,000</td>
+                <td>12,000</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="parcel-service">
+        <caption>
+            <strong>소포우편(창구접수)</strong>
+            <br>
+            <span>1</span><span aria-hidden="true">)</span><span>등기소포</span>
+            <p class="hidden">소포우편 창구접수를 통해 등기소포 이용시 무게, 크기 및 지역별 상세적인 요금 안내</p>
+        </caption>
+        <colgroup span="2"></colgroup>
+        <col>
+        <colgroup span="2"></colgroup>
+        <colgroup span="4"></colgroup>
+        <col>
+        <thead>
+            <tr>
+                <th colspan="2" rowspan="2" scope="colgroup">구 분<br /><span aria-hidden="true">(</span>초과 ~
+                    이하<span aria-hidden="true">)</span></th>
+                <th scope="col">80㎝ 이하</th>
+                <th scope="colgroup" colspan="2">80㎝∼100㎝</th>
+                <th scope="colgroup" colspan="4">100㎝∼120㎝</th>
+                <th scope="col">120㎝∼160㎝</th>
+            </tr>
+            <tr>
+                <th scope="col">3kg 이하</th>
+                <th scope="col">3kg∼5kg</th>
+                <th scope="col">5kg∼7kg</th>
+                <th scope="col">7kg∼10kg</th>
+                <th scope="col">10kg∼15kg</th>
+                <th scope="col">15kg∼20kg</th>
+                <th scope="col">20kg∼25kg</th>
+                <th scope="col">25kg∼30kg</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" colspan="2">익일배달</th>
+                <td> 4,000 </td>
+                <td> 4,500 </td>
+                <td> 5,000 </td>
+                <td> 6,000 </td>
+                <td> 7,000 </td>
+                <td> 8,000 </td>
+                <td> 9,000 </td>
+                <td> 11,000 </td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="2">제주</th>
+                <th scope="row">익일<br />배달</th>
+                <td>6,500</td>
+                <td>7,000</td>
+                <td>7,500</td>
+                <td>8,500</td>
+                <td>9,500</td>
+                <td>10,500</td>
+                <td>11,500</td>
+                <td>13,500</td>
+            </tr>
+            <tr>
+                <th scope="row">D+2일<br />배달</th>
+                <td>4,000</td>
+                <td>4,500</td>
+                <td>5,000</td>
+                <td>6,000</td>
+                <td>7,000</td>
+                <td>8,000</td>
+                <td>9,000</td>
+                <td>11,000</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="parcel-service">
+        <caption>
+            <strong class="hidden">소포우편(창구접수)</strong>
+            <br>
+            <span>2</span><span aria-hidden="true">)</span><span>일반소포</span>
+            <p class="hidden">소포우편 창구접수를 통해 일반소포 이용시 무게, 크기 및 지역별 상세적인 요금 안내</p>
+        </caption>
+        <col>
+        <col>
+        <colgroup span="2"></colgroup>
+        <colgroup span="4"></colgroup>
+        <col>
+        <thead>
+            <tr>
+                <th rowspan="2">구 분<br /><span aria-hidden="true">(</span>초과 ~
+                    이하<span aria-hidden="true">)</span></th>
+                <th scope="col">80㎝ 이하</th>
+                <th scope="colgroup" colspan="2">80㎝∼100㎝</th>
+                <th scope="colgroup" colspan="4">100㎝∼120㎝</th>
+                <th scope="col">120㎝∼160㎝</th>
+            </tr>
+            <tr>
+                <th scope="col">3kg 이하</th>
+                <th scope="col">3kg∼5kg</th>
+                <th scope="col">5kg∼7kg</th>
+                <th scope="col">7kg∼10kg</th>
+                <th scope="col">10kg∼15kg</th>
+                <th scope="col">15kg∼20kg</th>
+                <th scope="col">20kg∼25kg</th>
+                <th scope="col">25kg∼30kg</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">D+3일 배달</th>
+                <td>2,700</td>
+                <td>3,200</td>
+                <td>3,700</td>
+                <td>4,700</td>
+                <td>5,700</td>
+                <td>6,700</td>
+                <td>7,700</td>
+                <td>9,700</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="extra-fee">
+        <caption>
+            <strong>부가이용 수수료(등기소포를 전제로 취급지역에 한함)</strong>
+            <p class="hidden">등기소포 이용시 건당 지역별 부가이용 수수료</p>
+        </caption>
+        <thead>
+            <tr>
+                <th id="type">구분</th>
+                <th id="one-day">당일특급</th>
+                <th id="pay-fee">착불소포</th>
+                <th id="safe-del">안심소포</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th id="each-fee">수수료<span aria-hidden="true">(</span>1개당<span aria-hidden="true">)</span></th>
+                <td headers="one-day each-fee">지역구분 요금<br /><span aria-hidden="true">-</span> 지역 내 <span
+                        aria-hidden="true">:</span> 5,000원<br /><span aria-hidden="true">-</span> 지역 간 <span
+                        aria-hidden="true">:</span> 10,000원</td>
+                <td headers="pay-fee each-fee">500원</td>
+                <td headers="safe-del each-fee">1,000원 + 손해배상한도액 초과시<br />10만원마다 500원</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="discount-range">
+        <caption>
+            <strong>소포요금 감액</strong>
+            <br>
+            <span>2</span><span aria-hidden="true">.</span><span>요금감액 범위</span>
+            <p class="hidden">창구소포 및 방문접수 다량 이용시 감액되는 금액 및 대상 안내</p>
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col" colspan="2">납부방법<span aria-hidden="true">/</span>할인율</th>
+                <th scope="col">5%</th>
+                <th scope="col">10%</th>
+                <th scope="col">15%</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="2">창구소포</th>
+                <th scope="row">요금즉납</th>
+                <td>3개 이상</td>
+                <td>10개 이상</td>
+                <td>50개 이상</td>
+            </tr>
+            <tr>
+                <th scope="row">요금후납</th>
+                <td>70개 이상</td>
+                <td>100개 이상</td>
+                <td>130개 이상</td>
+            </tr>
+            <tr>
+                <th scope="row">방문접수</th>
+                <th scope="row">접수정보<br>사전연계</th>
+                <td colspan="3">개당 500원 감액<br><span aria-hidden="true">(</span>접수정보 입력, 사전결제, 픽업장소 지정 시<span
+                        aria-hidden="true">)</span></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

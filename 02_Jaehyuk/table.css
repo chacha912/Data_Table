@@ -6,6 +6,7 @@ table {
   border-collapse: collapse;
   font-size: 1rem;
   text-align: center;
+  border: 1px solid #656565;
 }
 caption {
   text-align: left;
@@ -14,7 +15,9 @@ th {
   background-color: #eee;
   color: #656565;
   font-size: 0.8rem;
+  border: 1px solid #656565;
 }
 td {
   font-size: 0.8rem;
+  border: 1px solid #656565;
 }

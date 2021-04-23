@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./table.css" />
+    <title>인터넷우체국 테이블</title>
+  </head>
+  <body>
+    <h1>인터넷우체국 요금안내</h1>
+    <section class="">
+      <table>
+        <caption>
+          우체국택배(방문접수) 고객이 원하는 장소로 우체국직원이 방문하여 접수하는 서비스
+        </caption>
+        <thead>
+        <tr>
+          <th role="rowheader" scope="row" colspan="2" aria-colspan="2">
+            구분
+            <br />
+            (초과~이하)
+          </th>
+          <th role="columnheader" id="less-than-5kg-visit">
+            5kg 이하
+            <br />
+            (80㎝ 이하)
+          </th>
+          <th role="columnheader" id="between-5kg-and-10kg-visit">
+            5kg∼10kg
+            <br />
+            (80㎝∼100㎝)
+          </th>
+          <th role="columnheader" id="between-10kg-and-20kg-visit">
+            10kg∼20kg
+            <br />
+            (100㎝∼120㎝)
+          </th>
+          <th role="columnheader" id="between-20kg-and-30kg-visit">
+            20kg∼30kg
+            <br />
+            (120㎝∼160㎝)
+          </th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th role="rowheader" scope="row" colspan="2" aria-colspan="2" id="today-delivery-visit">익일배달</th>
+            <td headers="less-than-5kg-visit today-delivery-visit">5,000</td>
+            <td headers="between-5kg-and-10kg-visit today-delivery-visit">8,000</td>
+            <td headers="between-10kg-and-20kg-visit today-delivery-visit">10,000</td>
+            <td headers="between-20kg-and-30kg-visit today-delivery-visit">12,000</td>
+          </tr>
+          <tr>
+            <th role="rowheader" scope="rowgroup" rowspan="2" aria-rowspan="2" id="jeju-visit">제주</th>
+            <th role="rowheader" scope="row" id="today-delivery-jeju-visit">익일배달</th>
+            <td headers="less-than-5kg-visit jeju-visit today-delivery-jeju-visit">7,500</td>
+            <td headers="between-5kg-and-10kg-visit jeju-visit today-delivery-jeju-visit">
+              10,500
+            </td>
+            <td headers="between-10kg-and-20kg-visit jeju-visit today-delivery-jeju-visit">
+              12,500
+            </td>
+            <td headers="between-20kg-and-30kg-visit jeju-visit today-delivery-jeju-visit">
+              14,500
+            </td>
+          </tr>
+          <tr>
+            <th role="rowheader" scope="row" id="after-2-days-delivery-jeju">D+2일 배달</th>
+            <td headers="less-than-5kg-visit jeju-visit after-2-days-delivery-jeju">5,000</td>
+            <td headers="between-5kg-and-10kg-visit jeju-visit after-2-days-delivery-jeju">
+              8,000
+            </td>
+            <td headers="between-10kg-and-20kg-visit jeju-visit after-2-days-delivery-jeju">
+              10,000
+            </td>
+            <td headers="between-20kg-and-30kg-visit jeju-visit after-2-days-delivery-jeju">
+              12,000
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="">
+      <h2>소포우편(창구접수)</h2>
+      <table>
+        <caption>
+          소포우편(창구접수) 중 1) 등기소포입니다. 고객님이 우체국에 방문하여 등기로 접수하는 우편 서비스입니다.
+        </caption>
+        <thead>
+          <tr>
+            <th role="rowheader" scope="rowgroup" rowspan="2" colspan="2" aria-rowspan="2" aria-colspan="2">
+              구 분
+              <br />
+              (초과 ~ 이하)
+            </th>
+            <th role="columnheader" scope="col" id="less-than-80cm-parcel-express">80cm 이하</th>
+            <th role="columnheader" scope="colgroup" colspan="2" aria-colspan="2" id="between-80cm-and-100cm-parcel-express">
+              80cm ~ 100cm
+            </th>
+            <th role="columnheader" scope="colgroup" colspan="4" aria-colspan="4" id="between-100cm-and-120cm-parcel-express">
+              100cm ~ 120cm
+            </th>
+            <th role="columnheader" scope="col" id="between-120cm-and-160cm-parcel-express">120cm ~ 160cm</th>
+          </tr>
+          <tr>
+            <th role="columnheader" scope="col" id="less-than-3kg">3kg 이하</th>
+            <th role="columnheader" scope="col" id="between-3kg-and-5kg">3kg ~ 5kg</th>
+            <th role="columnheader" scope="col" id="between-5kg-and-7kg">5kg ~ 7kg</th>
+            <th role="columnheader" scope="col" id="between-7kg-and-10kg">7kg ~ 10kg</th>
+            <th role="columnheader" scope="col" id="between-10kg-and-15kg">10kg ~ 15kg</th>
+            <th role="columnheader" scope="col" id="between-15kg-and-20kg">15kg ~ 20kg</th>
+            <th role="columnheader" scope="col" id="between-20kg-and-25kg">20kg ~ 25kg</th>
+            <th role="columnheader" scope="col" id="between-25kg-and-30kg">25kg ~ 30kg</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th role="rowheader" scope="row" colspan="2" aria-colspan="2" id="today-delivery-parcel-express">익일배달</th>
+            <td headers="less-than-80cm-parcel-express less-than-3kg today-delivery-parcel-express">
+              4,000
+            </td>
+            <td
+              headers="between-80cm-and-100cm-parcel-express between-3kg-and-5kg today-delivery-parcel-express"
+            >
+              4,500
+            </td>
+            <td
+              headers="between-80cm-and-100cm-parcel-express between-5kg-and-7kg today-delivery-parcel-express"
+            >
+              5,000
+            </td>
+            <td
+              headers="between-100cm-and-120cm-parcel-express between-7kg-and-10kg today-delivery-parcel-express"
+            >
+              6,000
+            </td>
+            <td
+              headers="between-100cm-and-120cm-parcel-express between-10kg-and-15kg today-delivery-parcel-express"
+            >
+              7,000
+            </td>
+            <td
+              headers="between-100cm-and-120cm-parcel-express between-15kg-and-20kg today-delivery-parcel-express"
+            >
+              8,000
+            </td>
+            <td
+              headers="between-100cm-and-120cm-parcel-express between-20kg-and-25kg today-delivery-parcel-express"
+            >
+              9,000
+            </td>
+            <td
+              headers="between-120cm-and-160cm-parcel-express between-25kg-and-30kg today-delivery-parcel-express"
+            >
+              11,000
+            </td>
+          </tr>
+          <tr>
+            <th role="rowheader" scope="rowgroup" rowspan="2" aria-rowspan="2" id="jeju-parcel-express">제주</th>
+            <th role="rowheader" scope="row" id="today-delivery-parcel-express-jeju">익일배달</th>
+            <td
+              headers="less-than-80cm-parcel-express less-than-3kg jeju-parcel-express today-delivery-parcel-express-jeju"
+            >
+              6,500
+            </td>
+            <td
+              headers="between-80cm-and-100cm-parcel-express between-3kg-and-5kg jeju-parcel-express today-delivery-parcel-express-jeju"
+            >
+              7,000
+            </td>
+            <td
+              headers="between-80cm-and-100cm-parcel-express between-5kg-and-7kg jeju-parcel-express today-delivery-parcel-express-jeju"
+            >
+              7,500
+            </td>
+            <td
+              headers="between-100cm-and-120cm-parcel-express between-7kg-and-10kg jeju-parcel-express today-delivery-parcel-express-jeju"
+            >
+              8,500
+            </td>
+            <td
+              headers="between-100cm-and-120cm-parcel-express between-10kg-and-15kg jeju-parcel-express today-delivery-parcel-express-jeju"
+            >
+              9,500
+            </td>
+            <td
+              headers="between-100cm-and-120cm-parcel-express between-15kg-and-20kg jeju-parcel-express today-delivery-parcel-express-jeju"
+            >
+              10,500
+            </td>
+            <td
+              headers="between-100cm-and-120cm-parcel-express between-20kg-and-25kg jeju-parcel-express today-delivery-parcel-express-jeju"
+            >
+              11,500
+            </td>
+            <td
+              headers="between-120cm-and-160cm-parcel-express between-25kg-and-30kg jeju-parcel-express today-delivery-parcel-express-jeju"
+            >
+              13,500
+            </td>
+          </tr>
+          <tr>
+            <th role="rowheader" scope="row" id="after-2-days-delivery-parcel-jeju">D+2일 배달</th>
+            <td
+              headers="less-than-80cm-parcel-express less-than-3kg jeju-parcel-express after-2-days-delivery-parcel-jeju"
+            >
+              4,000
+            </td>
+            <td
+              headers="between-80cm-and-100cm-parcel-express between-3kg-and-5kg jeju-parcel-express after-2-days-delivery-parcel-jeju"
+            >
+              4,500
+            </td>
+            <td
+              headers="between-80cm-and-100cm-parcel-express between-5kg-and-7kg jeju-parcel-express after-2-days-delivery-parcel-jeju"
+            >
+              5,000
+            </td>
+            <td
+              headers="between-100cm-and-120cm-parcel-express between-7kg-and-10kg jeju-parcel-express after-2-days-delivery-parcel-jeju"
+            >
+              6,000
+            </td>
+            <td
+              headers="between-100cm-and-120cm-parcel-express between-10kg-and-15kg jeju-parcel-express after-2-days-delivery-parcel-jeju"
+            >
+              7,000
+            </td>
+            <td
+              headers="between-100cm-and-120cm-parcel-express between-15kg-and-20kg jeju-parcel-express after-2-days-delivery-parcel-jeju"
+            >
+              8,000
+            </td>
+            <td
+              headers="between-100cm-and-120cm-parcel-express between-20kg-and-25kg jeju-parcel-express after-2-days-delivery-parcel-jeju"
+            >
+              9,000
+            </td>
+            <td
+              headers="between-120cm-and-160cm-parcel-express between-25kg-and-30kg jeju-parcel-express after-2-days-delivery-parcel-jeju"
+            >
+              11,000
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table>
+        <caption>
+            소포우편(창구접수) 중 1) 일반소포입니다. 고객님이 우체국에 방문하여 등기로 접수하는 우편 서비스
+        </caption>
+        <thead>
+          <tr>
+            <th role="rowheader" scope="rowgroup" rowspan="2" aria-rowspan="2">
+              구분
+              <br />
+              (초과 ~ 이하)
+            </th>
+            <th role="columnheader" scope="col" id="less-than-80cm-parcel-normal">80cm 이하</th>
+            <th role="columnheader" scope="colgroup" colspan="2" aria-colspan="2" id="between-80cm-and-100cm-parcel-normal">
+              80cm ~ 100cm
+            </th>
+            <th role="columnheader" scope="colgroup" colspan="4" aria-colspan="2" id="between-100cm-and-120cm-parcel-normal">
+              100cm ~ 120cm
+            </th>
+            <th role="columnheader" scope="col" id="between-120cm-and-160cm-parcel-normal">120cm ~ 160cm</th>
+          </tr>
+          <tr>
+            <th role="columnheader" scope="col" id="less-than-3kg-parcel-normal">3kg 이하</th>
+            <th role="columnheader" scope="col" id="between-3kg-and-5kg-parcel-normal">3kg~5kg</th>
+            <th role="columnheader" scope="col" id="between-5kg-and-7kg-parcel-normal">5kg~7kg</th>
+            <th role="columnheader" scope="col" id="between-7kg-and-10kg-parcel-normal">7kg~10kg</th>
+            <th role="columnheader" scope="col" id="between-10kg-and-15kg-parcel-normal">10kg~15kg</th>
+            <th role="columnheader" scope="col" id="between-15kg-and-20kg-parcel-normal">15kg~20kg</th>
+            <th role="columnheader" scope="col" id="between-20kg-and-25kg-parcel-normal">20kg~25kg</th>
+            <th role="columnheader" scope="col" id="between-25kg-and-30kg-parcel-normal">25kg~30kg</th>
+          </tr>
+          <tr>
+            <th role="rowheader" scope="row" id="after-3-days-delivery-parcel-normal">D+3일 배달</th>
+            <td headers="less-than-80cm-parcel-normal less-than-3kg-parcel-normal">2,700</td>
+            <td headers="between-80cm-and-100cm-parcel-normal between-3kg-and-5kg-parcel-normal">
+              3,200
+            </td>
+            <td headers="between-80cm-and-100cm-parcel-normal between-5kg-and-7kg-parcel-normal">
+              3,700
+            </td>
+            <td headers="between-100cm-and-120cm-parcel-normal between-7kg-and-10kg-parcel-normal">
+              4,700
+            </td>
+            <td
+              headers="between-100cm-and-120cm-parcel-normal between-10kg-and-15kg-parcel-normal"
+            >
+              5,700
+            </td>
+            <td
+              headers="between-100cm-and-120cm-parcel-normal between-15kg-and-20kg-parcel-normal"
+            >
+              6,700
+            </td>
+            <td
+              headers="between-100cm-and-120cm-parcel-normal between-20kg-and-25kg-parcel-normal"
+            >
+              7,700
+            </td>
+            <td
+              headers="between-120cm-and-160cm-parcel-normal between-25kg-and-30kg-parcel-normal"
+            >
+              9,700
+            </td>
+          </tr>
+        </thead>
+      </table>
+    </section>
+
+    <section class="">
+      <h2>부가이용 수수료(등기소포를 전제로 취급지역에 한함)</h2>
+      <table>
+        <caption>
+          부가이용 수수료(등기소포를 전제로 취급지역에 한함)
+        </caption>
+        <thead>
+          <tr>
+            <th role="rowheader">구분</th>
+            <th role="columnheader" scope="col">당일특급</th>
+            <th role="columnheader" scope="col">착불소포</th>
+            <th role="columnheader" scope="col">안심소포</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th role="rowheader" scope="row">수수료(1개당)</th>
+            <td>
+              지역구분 요금
+              <br />
+              - 지역 내 : 5,000원
+              <br />
+              - 지역 간 : 10,000원
+            </td>
+            <td>500원</td>
+            <td>
+              1,000원 + 손해배상한도액 초과시
+              <br />
+              10만원마다 500원
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">
+                    당일특급 수수료는 "등기소포 익일배달(제주 D+2일 배달)" 요금에 적용
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    배달증명, 환부수수료는 국내통상 우편에 관한 수수료 적용
+                </td>
+            </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section class="">
+      <h2>소포요금 감액</h2>
+      <p id="parcel-discount-info">
+        요금감액 요건<br>
+        감액 대상 : 창구접수(등기소포)·방문접수 우편요금(부가취급수수료 제외) - 기표지 상 동일발송인 및 접수정보 연계 접수시에 한함<br>
+        접수연계란? : 고객이 우체국창구에서 직접 주소ㆍ성명 등을 기재하지 않고, 인터넷우체국 '창구(다량)소포접수'를 통하여 주소ㆍ성명 등을 사전에 입력하는 것을 말함<br>
+        감액접수 대상관서 : 전국 모든 우편관서(우편취급국 포함)<br>
+      </p>
+      <table
+        aria-describedby="parcel-discount-info"
+      >
+        <caption>
+            소포요금 감액 정보에 대한 표입니다.
+        </caption>
+        <thead>
+          <tr>
+            <th role="columnheader" colspan="2" aria-colspan="2" id="payment-ways-discount-rate">납부방법/할인율</th>
+            <th role="columnheader" scope="col" id="5%-discount-rate">5%</th>
+            <th role="columnheader" scope="col" id="10%-discount-rate">10%</th>
+            <th role="columnheader" scope="col" id="15%-discount-rate">15%</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th role="rowheader" scope="rowgroup" rowspan="2" aria-rowspan="2" id="visit-parcel">창구소포</th>
+            <th role="rowheader" scope="row" id="immediate-payment">요금즉납</th>
+            <td
+              headers="payment-ways-discount-rate visit-parcel immediate-payment 5%-discount-rate"
+            >
+              3개 이상
+            </td>
+            <td
+              headers="payment-ways-discount-rate visit-parcel immediate-payment 10%-discount-rate"
+            >
+              10개 이상
+            </td>
+            <td
+              headers="payment-ways-discount-rate visit-parcel immediate-payment 15%-discount-rate"
+            >
+              50개 이상
+            </td>
+          </tr>
+          <tr>
+            <th role="rowheader" scope="row" id="after-payment">요금후납</th>
+            <td headers="payment-ways-discount-rate visit-parcel after-payment 5%-discount-rate">
+              70개 이상
+            </td>
+            <td headers="payment-ways-discount-rate visit-parcel after-payment 10%-discount-rate">
+              100개 이상
+            </td>
+            <td headers="payment-ways-discount-rate visit-parcel after-payment 15%-discount-rate">
+              130개 이상
+            </td>
+          </tr>
+          <tr>
+            <th role="rowheader" scope="rowgroup">방문접수</th>
+            <th role="rowheader" scope="row">
+              접수정보
+              <br />
+              사전연게
+            </th>
+            <td colspan="3" aria-colspan="3">
+              개당 500원 감액
+              <br />
+              (접수정보 입력, 사전결제, 픽업장소 지정 시)
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5" aria-colspan="5">
+                    창구접수 감액은 인터넷우체국 사전접수를 통한 접수정보 연계 시 적용
+                </td>
+            </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section class="">
+        <h2>이용 시 유의사항</h2>
+      <p id="caution">
+        중량은 최대 30kg 이하이며, 크기(가로, 세로, 높이의 합)는 최대 160㎝이하입니다. 다만, 한 변의 최대 길이는 100㎝이내에 한하여 취급합니다.<br>
+        당일특급 우편물의 경우 중량은 20kg이하이며, 크기는 120cm이내에 한하여 취급합니다.<br>
+        일반소포는 등기소포와 달리 기록취급이 되지 않으므로 분실 시 손해배상이 되지 않습니다.<br>
+        중량/크기 중 큰 값을 기준으로 다음 단계의 요금을 적용합니다.<br>
+        도서지역 등 특정지역의 배달 소요기간은 위 내용과 다를 수 있습니다.<br>
+        제주지역(익일배달)은 항공기 운송 여건에 따라 지역마다 마감시간이 상이합니다.<br>
+      </p>
+      <table
+        aria-describedby="caution"
+      >
+        <caption>
+            당일특급서비스의 지역구분 표입니다.
+        </caption>
+        <tbody>
+          <td>서울 / 인천 / 경기</td>
+          <td>부산 / 울산 / 경남</td>
+          <td>대전 / 세종 / 충남</td>
+          <td>충북</td>
+          <td>광주 / 전남</td>
+          <td>대구 / 경북</td>
+          <td>전북</td>
+          <td>강원</td>
+          <td>제주</td>
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>

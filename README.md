@@ -3,7 +3,7 @@
 
 01. <a href="01_jihoon/README.md">장지훈</a>
 02. <a href="02_Jaehyuk/README.md">허재혁</a>
-03. <a href="03_yurim/README.md">차유림</a>
+03. <a href="03_yourim/README.md">차유림</a>
 04. <a href="04_kyungyup/README.md">이경엽</a>
 05. <a href="05_sangwon/README.md">고상원</a>
 06. <a href="06_Jaewon/README.md">오재원</a>

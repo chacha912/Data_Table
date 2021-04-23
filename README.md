@@ -8,7 +8,7 @@
 05. <a href="05_sangwon/README.md">고상원</a>
 06. <a href="06_Jaewon/README.md">오재원</a>
 07. <a href="07_jeongwon/README.md">김정원</a>
-08. <a href="08_donggeon/README.md">윤동건</a>
+08. <a href="08_donggun/README.md">윤동건</a>
 09. <a href="09_dooyeong/README.md">정두영</a>
 10. <a href="10_daeun/README.md">윤다은</a>
 11. <a href="11_hyeonjeong/README.md">조현정</a>

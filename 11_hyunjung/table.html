@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DATA_TABLE</title>
+    <link rel="stylesheet" href="table.css" />
+  </head>
+  <body>
+    <!--우체국택배(방문접수)-->
+    <table class="post-visit-table">
+      <caption>
+        우체국택배(방문접수)
+      </caption>
+      <colgroup>
+        <col style="width: 14%" />
+        <col style="width: 14%" />
+        <col style="width: 18%" />
+        <col style="width: 18%" />
+        <col style="width: 18%" />
+        <col style="width: 18%" />
+      </colgroup>
+      <thead>
+        <tr class="first-row">
+          <th colspan="2" scope="col">구 분<br />(초과 &#126; 이하)</th>
+          <th scope="col">5kg 이하<br />(80cm 이하)</th>
+          <th scope="col">5kg&#126;10kg<br />(80cm&#126;100cm)</th>
+          <th scope="col">10kg&#126;20kg<br />(100cm&#126;120cm)</th>
+          <th scope="col">20kg&#126;30kg<br />(120cm&#126;160cm)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" colspan="2">익일배달</th>
+          <td>5,000</td>
+          <td>8,000</td>
+          <td>10,000</td>
+          <td>12,000</td>
+        </tr>
+        <tr>
+          <th scope="row" rowspan="2">제주</th>
+          <th scope="row">익일배달</th>
+          <td>7,500</td>
+          <td>10,500</td>
+          <td>12,500</td>
+          <td>14,500</td>
+        </tr>
+        <tr>
+          <th scope="row">D&#43;2일 배달</th>
+          <td>5,000</td>
+          <td>8,000</td>
+          <td>10,000</td>
+          <td>12,000</td>
+        </tr>
+      </tbody>
+    </table>
+    <!--소포우편(창구접수)-->
+    <!--1)등기소포-->
+    <table class="pakage-window-register-table">
+      <caption>
+        소포우편(창구접수) 1)등기소포
+      </caption>
+      <colgroup>
+        <col style="width: 6%" />
+        <col style="width: 6%" />
+        <col style="width: 11%" />
+        <col style="width: 11%" />
+        <col style="width: 11%" />
+        <col style="width: 11%" />
+        <col style="width: 11%" />
+        <col style="width: 11%" />
+        <col style="width: 11%" />
+        <col style="width: 11%" />
+      </colgroup>
+      <thead>
+        <tr class="first-row">
+          <th colspan="2" rowspan="2">구 분<br />(초과 &#126; 이하)</th>
+          <th id="80">80cm 이하</th>
+          <th id="80to100" colspan="2">80cm&#126;100cm</th>
+          <th id="100to120" colspan="4">100cm&#126;120cm</th>
+          <th id="120to160">120cm&#126;160cm</th>
+        </tr>
+        <tr>
+          <th id="3">3kg 이하</th>
+          <th id="3to5">3kg&#126;5kg</th>
+          <th id="5to7">5kg&#126;7kg</th>
+          <th id="7to10">7kg&#126;10kg</th>
+          <th id="10to15">10kg&#126;15kg</th>
+          <th id="15to20">15kg&#126;20kg</th>
+          <th id="20to25">20kg&#126;25kg</th>
+          <th id="25to30">25kg&#126;30kg</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th id="nextday" colspan="2">익일배달</th>
+          <td headers="nextday 80 3">4,000</td>
+          <td headers="nextday 80to100 3to5">4,500</td>
+          <td headers="nextday 80to100 5to7">5,000</td>
+          <td headers="nextday 100to120 7to10">6,000</td>
+          <td headers="nextday 100to120 10to15">7,000</td>
+          <td headers="nextday 100to120 15to20">8,000</td>
+          <td headers="nextday 100to120 20to25">9,000</td>
+          <td headers="nextday 120to160 25to30">11,000</td>
+        </tr>
+        <tr>
+          <th id="jeju" rowspan="2">제주</th>
+          <th id="jejunextday">익일<br />배달</th>
+          <td headers="jeju jejunextday 80 3">6,500</td>
+          <td headers="jeju jejunextday 80to100 3to5">7,000</td>
+          <td headers="jeju jejunextday 80to100 5to7">7,500</td>
+          <td headers="jeju jejunextday 100to120 7to10">8,500</td>
+          <td headers="jeju jejunextday 100to120 10to15">9,500</td>
+          <td headers="jeju jejunextday 100to120 15to20">10,500</td>
+          <td headers="jeju jejunextday 100to120 20to25">11,500</td>
+          <td headers="jeju jejunextday 120to160 25to30">13,500</td>
+        </tr>
+        <tr>
+          <th id="jejuafter2">D&#43;2일<br />배달</th>
+          <td headers="jeju jejuafter2 80 3">4,000</td>
+          <td headers="jeju jejuafter2 80to100 3to5">4,500</td>
+          <td headers="jeju jejuafter2 80to100 5to7">5,000</td>
+          <td headers="jeju jejuafter2 100to120 7to10">6,000</td>
+          <td headers="jeju jejuafter2 100to120 10to15">7,000</td>
+          <td headers="jeju jejuafter2 100to120 15to20">8,000</td>
+          <td headers="jeju jejuafter2 100to120 20to25">9,000</td>
+          <td headers="jeju jejuafter2 120to160 25to30">11,000</td>
+        </tr>
+      </tbody>
+    </table>
+    <!--소포우편(창구접수) 2)일반소포-->
+    <table class="pakage-window-general-table">
+      <caption>
+        소포우편(창구접수) 2)일반소포
+      </caption>
+      <thead>
+        <tr class="first-row">
+          <th scope="rowgroup" colspan="2" rowspan="2">
+            구 분<br />(초과 &#126; 이하)
+          </th>
+          <th scope="col">80cm 이하</th>
+          <th scope="col" colspan="2">80cm&#126;100cm</th>
+          <th scope="col" colspan="4">100cm&#126;120cm</th>
+          <th scope="col">120cm&#126;160cm</th>
+        </tr>
+        <tr>
+          <th scope="col">3kg 이하</th>
+          <th scope="col">3kg&#126;5kg</th>
+          <th scope="col">5kg&#126;7kg</th>
+          <th scope="col">7kg&#126;10kg</th>
+          <th scope="col">10kg&#126;15kg</th>
+          <th scope="col">15kg&#126;20kg</th>
+          <th scope="col">20kg&#126;25kg</th>
+          <th scope="col">25kg&#126;30kg</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" colspan="2">D&#43;3일 배달</th>
+          <td>2,700</td>
+          <td>3,200</td>
+          <td>3,700</td>
+          <td>4,700</td>
+          <td>5,700</td>
+          <td>6,700</td>
+          <td>7,700</td>
+          <td>9,700</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!--2. 요금감액 범위-->
+    <table class="reduction-charge-table">
+      <caption>
+        2.요금감액 범위
+      </caption>
+      <thead>
+        <tr class="first-row">
+          <th scope="col" colspan="2">납부방법/할인율</th>
+          <th scope="col">5&#37;</th>
+          <th scope="col">10&#37;</th>
+          <th scope="col">15&#37;</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" rowspan="2">창구소포</th>
+          <th scope="row">요금즉납</th>
+          <td>3개 이상</td>
+          <td>10개 이상</td>
+          <td>50개 이상</td>
+        </tr>
+        <tr>
+          <th scope="row">요금후납</th>
+          <td>70개 이상</td>
+          <td>100개 이상</td>
+          <td>130개 이상</td>
+        </tr>
+        <tr>
+          <th scope="row">방문접수</th>
+          <th scope="row">접수정보<br />사전연계</th>
+          <td colspan="3">
+            개당 500원 감액<br />(접수정보 입력, 사전결제, 픽업장소 지정 시)
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="express-service-table">
+      <caption>
+        당일특급서비스의 지역구분
+      </caption>
+      <tbody>
+        <tr>
+          <td>서울 &#47; 인천 &#47; 경기</td>
+          <td>부산 &#47; 울산 &#47; 경남</td>
+          <td>대전 &#47; 세종 &#47; 충남</td>
+          <td>충북</td>
+          <td>광주 &#47; 전남</td>
+          <td>대구 &#47; 경북</td>
+          <td>전북</td>
+          <td>강원</td>
+          <td>제주</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

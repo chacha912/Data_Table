@@ -171,13 +171,11 @@ HTML에서 만드는 표로, 2차원으로 나뉜 공간에 행이나 열을 따
         <li>등기소포
             <table>
                 <caption>등기소포 요금표</caption>
-                <colgroup>
-                    <col span="2">
-                    <col>
-                    <col span="2">
-                    <col span="4">
-                    <col>
-                </colgroup>
+                <colgroup span="2"></colgroup>
+                <col>
+                <colgroup span="2"></colgroup>
+                <colgroup span="4"></colgroup>
+                <col>
                 <thead>
                     <tr>
                         <th id="size" colspan="2" rowspan="2">구 분<br>(초과 ~ 이하)</th>
@@ -238,13 +236,11 @@ HTML에서 만드는 표로, 2차원으로 나뉜 공간에 행이나 열을 따
         <li>일반소포
             <table>
                 <caption>일반소포</caption>
-                <colgroup>
-                    <col span="2">
-                    <col>
-                    <col span="2">
-                    <col span="4">
-                    <col>
-                </colgroup>
+                <colgroup span="2"></colgroup>
+                <col>
+                <colgroup span="2"></colgroup>
+                <colgroup span="4"></colgroup>
+                <col>
                 <thead>
                     <tr>
                         <th scope="rowgroup" colspan="2" rowspan="2">구 분<br>(초과 ~ 이하)</th>
@@ -349,12 +345,10 @@ HTML에서 만드는 표로, 2차원으로 나뉜 공간에 행이나 열을 따
             요금감액 범위
             <table>
                 <caption>납부방법에 따른 할인률</caption>
-                <colgroup>
-                    <col span="2">
-                    <col>
-                    <col>
-                    <col>
-                </colgroup>
+                <colgroup span="2"></colgroup>
+                <col>
+                <col>
+                <col>
                 <thead>
                     <tr>
                         <th id="pay-dc" colspan="2">납부방법/할인률</th>

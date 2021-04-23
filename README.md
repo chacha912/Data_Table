@@ -11,6 +11,6 @@
 08. <a href="08_donggun/README.md">윤동건</a>
 09. <a href="09_dooyeong/README.md">정두영</a>
 10. <a href="10_daeun/README.md">윤다은</a>
-11. <a href="11_hyeonjeong/README.md">조현정</a>
+11. <a href="11_hyunjung/README.md">조현정</a>
 12. <a href="12_yeongjong/README.md">김영종</a>
 13. <a href="13_seungjae/README.md">안승재</a>

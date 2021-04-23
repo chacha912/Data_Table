@@ -175,9 +175,9 @@
 
 일단 위 코드를 보면
 
-- `caption` 태그가 있는가? <span style="color:red; font-weight:700">NO</span>
-- `thead`, `tbody`, `tfoot`이 있는가? <span style="color:red; font-weight:700">NO</span>
-- `scope`속성을 주었는가? <span style="color:red; font-weight:700">NO</span>
+- `caption` 태그가 있는가? **"NO"**
+- `thead`, `tbody`, `tfoot`이 있는가? **"NO"**
+- `scope`속성을 주었는가? **"NO"**
 
 접근성에 대해 단 '1'도 고려하지 않은 코드라고 볼 수 있겠다. 하지만 과거의 나라면 단순히 표가 잘 그려지는 것을 보고 만족했을 것이다.
 하지만, 접근성을 조금 더 고려해본다면 다음과 같이 개선할 수 있을 것이다.
@@ -228,9 +228,9 @@
 </table>
 ```
 
-- `caption` 태그가 있는가? <span style="color:BLUE; font-weight:700">YES</span>
-- `thead`, `tbody`, `tfoot`이 있는가? <span style="color:BLUE; font-weight:700">YES</span>
-- `scope`속성을 주었는가? <span style="color:BLUE; font-weight:700">YES</span>
+- `caption` 태그가 있는가? **"YES"**
+- `thead`, `tbody`, `tfoot`이 있는가? **"YES"**
+- `scope`속성을 주었는가? **"YES"**
 
 이렇게 수정함으로써 디자인적으로는 변함없이, 스크린 리더가 표를 효과적으로 읽어주어 시각적으로 불편한 사람들이 보조기기의 도움을 받아 표를 조금 더 잘 이해할 수 있도록 해줄 수 있게 되었다.
 

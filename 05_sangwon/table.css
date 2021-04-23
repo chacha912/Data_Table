@@ -1,0 +1,41 @@
+body {
+    padding: 20px 50px 50px 50px;
+    font-size: 14px;
+    font-family: 'Nanum Gothic', 'Malgun Gothic', sans-serif;
+    color: #454545;
+}
+
+h2 {
+    margin-top: 50px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 5px 0;
+    line-height: 22px;
+}
+
+thead {
+    color: #656565;
+    background-color: #FBFBFB;
+    border-top: 3px solid gray;
+}
+
+caption {
+    display: none;
+}
+
+
+.sixth-table col {
+    width: 11.11%;
+}
+
+.sixth-table col:first-child {
+    width: 11.12%;
+}

@@ -1,0 +1,21 @@
+.post-visit-table,
+.pakage-window-register-table,
+.pakage-window-general-table,
+.usage-charge-table,
+.reduction-charge-table {
+  border: 1px solid lightgray;
+  border-collapse: collapse;
+  border-top: 2px solid gray;
+}
+.express-service-table {
+  border: 1px solid lightgray;
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid lightgray;
+}
+
+.first-row {
+  background-color: #fdfdfd;
+}
